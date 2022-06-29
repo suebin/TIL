@@ -129,7 +129,7 @@ master 브랜치에서 a.txt 를 만들고 git commit 하지 않은 상황에서
 
 ---
 
-# Branch Merge
+## Branch Merge
 
 독립된 작업 공간인 각 브랜치에서 작업이 끝나면 그 작업 내용을 master에 반영해야 한다.
 
