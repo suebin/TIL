@@ -29,7 +29,7 @@
 
 <br/>
 
-<span style='background-color:#dcffe4'>장점</span>
+##### <span style='background-color:#dcffe4'>장점</span>
 
 ​	 ✔️ 브랜치는 독립 공간을 형성하기 때문에 원본(master)에 대해 안전하다.
 
@@ -39,7 +39,7 @@
 
 <br/>
 
-<span style='background-color:#dcffe4'>브랜치의 필요성</span>
+##### <span style='background-color:#dcffe4'>브랜치의 필요성</span>
 
 master 브랜치는 상용을 의미하므로, 언제든 세상에 공개되어 있다. 에러가 있거나 버전을 수정할 때 이미 고객들이 사용하고 있는데 함부로 master에서 수정하기가 어렵다. 따라서 별도의  작업 공간인 브랜치에서 작업을 하고, 그 내용을 master에 반영한다. 
 
@@ -74,10 +74,8 @@ master 브랜치는 상용을 의미하므로, 언제든 세상에 공개되어 
 <br/>
 
 ❗️ <span style='background-color:#ffdce0'>git switch 하기 전에 꼭 커밋을 완료하고 이동하기</span> ❗️
-
-> master 브랜치에서 a.txt 를 만들고 git commit 하지 않은 상황에서 
->
-> master 브랜치로 이동하면 a.txt 파일이 그대로 남아있다.
+<br/>
+master 브랜치에서 a.txt 를 만들고 git commit 하지 않은 상황에서 master 브랜치로 이동하면 a.txt 파일이 그대로 남아있다.
 
 <br/>
 
