@@ -1,7 +1,7 @@
 # Branch
 <br/>
-- [Branch란?](#branch란?)
 
+- [Branch란?](#branch란?)
 - [git branch](#git-branch)
 - [git switch](#git-switch)
 - [Branch scenario](#branch-scenario)
