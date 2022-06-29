@@ -1,9 +1,8 @@
 # Branch
-
+<br/>
 - [Branch란?](#branch란?)
 
 - [git branch](#git-branch)
-
 - [git switch](#git-switch)
 - [Branch scenario](#branch-scenario)
 - [Branch Merge](#branch-merge)
@@ -12,17 +11,15 @@
 
 ---
 
-<br/><br/>
-
 ## Branch란?
 
-#### = 특정 커밋을 가리키는 ' <span style='background-color:#ffdce0'> 포인터 </span> '
+#### = 특정 커밋을 가리키는 ' <span style='background-color:#ffdce0'>포인터</span> '
 
 #### = 버전 관리의 꽃 🌷
 
 <br/>
 
-![첫 브랜치](C:\Users\l0ve1\Desktop\첫 브랜치.PNG)
+![첫 브랜치](./image.PNG)
 
 <br/>
 
@@ -88,39 +85,28 @@ master 브랜치는 상용을 의미하므로, 언제든 세상에 공개되어 
 
 ---
 
-<br/>
-
 ## Branch scenario
 
-1. 사전 세팅
-
+1. **사전 세팅**
    - `mkdir [폴더명]` : 홈 디렉토리에 폴더 생성
-
    - `cd [폴더명] `
-
    - `git init` : Git 저장소 생성
-
    - `touch a.txt` : 파일 생성 > 내용 작성  >`git add .`  >  `git commit -m ""` 
-
    - `git log --oneline` : 커밋한 개수만큼 master 브랜치에 버전이 만들어진 것을 확인
 
 <br/>
 
-2. 브랜치 생성, 조회
-    	1. `git branch [브랜치 이름]` : 브랜치 생성
-    	2. `git branch` : 브랜치 목록 확인 (*master란? : 현재 HEAD가 가리키는 브랜치는 master라는  의미)
-    	3. `git log --oneline` : 커밋 기준으로 master와 생성한 브랜치가 위치한 것을 확인
+2. **브랜치 생성, 조회**
+    - `git branch [브랜치 이름]` : 브랜치 생성
+    - `git branch` : 브랜치 목록 확인 (*master란? : 현재 HEAD가 가리키는 브랜치는 master라는  의미)
+    - `git log --oneline` : 커밋 기준으로 master와 생성한 브랜치가 위치한 것을 확인
 
 <br/>
 
-3. 브랜치 이동
-
+3. **브랜치 이동**
    - `git switch [브랜치 이름]` :  브랜치 이동
-
    - `git switch -c [브랜치 이름]` : 브랜치 새로 생성과 동시에 이동
-
    -  `git log --oneline` : HEAD는 해당 브랜치만 가리키고, master 브랜치는 보이지 않음
-
    - `git log --oneline --all` : 모든 브랜치의 로그를 볼 수 있음
 
    <br/>
@@ -133,7 +119,7 @@ master 브랜치는 상용을 의미하므로, 언제든 세상에 공개되어 
 
 <br/>
 
-4. 이동한 브랜치에서 커밋 생성
+4. **이동한 브랜치에서 커밋 생성**
 
    - 내용 작성
 
@@ -153,17 +139,14 @@ Merge(병합)로 브랜치를 합치면 된다.
 
 <br/>
 
-1. git merge
+1.**git merge**
    - 분기된 브랜치를 하나로 합치는 명령어
    - `git merge [합칠 브랜치 이름]`
    - **Merge 하기 전에는 메인 브랜치로 switch 해야한다.**
 
 <br/>
 
-2.  Merge의 종류
-
-   - Fast-Forword
-
-   - 3-Way Merge
-
-   - Merge Conflict
+2. **Merge의 종류**
+    - Fast-Forword
+    - 3-Way Merge
+    - Merge Conflict
