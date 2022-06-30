@@ -3,7 +3,7 @@
 
 
 1.  [다형성(Polymorphism)이란?](다형성(polymorphism)이란?)
-2. [객체 형 변환 (Object Type Casting)](###객체-형-변환 -(object-Type-Casting))
+2. [객체 형 변환 (Object Type Casting)](###객체-형-변환-(object-Type-Casting))
    - [자동 형 변환 (Promotion)](####자동-형-변환-(promotion))
    - [강제 형 변환 (Casting)](####강제-형-변환-(casting)) 
 
@@ -51,7 +51,7 @@
 
 ## 객체 형 변환 (Object Type Casting)
 
-형 변환은 데이터 타입을 다른 데이터 타입으로 변환하는 행위이다. 타입 변환이라고 한다. 
+형 변환은 데이터 타입을 다른 데이터 타입으로 변환하는 행위이다. 타입 변환이라고도 한다. 
 
 객체 형 변환은 **상속 관계**에 있는 클래스 사이에서 발생한다.
 
@@ -160,6 +160,6 @@ public class Car {
 boolean result = 좌항(객체) instanceof 우항(타입)
 ```
 
-좌항(객체)이 우항(타입)의 인스턴스이면(= 우항의 타입으로 객체가 생성되었다면) true
+좌항(객체)이 우항(타입)의 인스턴스이면, 즉 우항의 타입으로 객체가 생성되었다면 true
 
 그렇지 않으면 false
