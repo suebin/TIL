@@ -2,10 +2,10 @@
 
 
 
-1.  [다형성(Polymorphism)이란?](다형성(polymorphism)이란?)
-2. [객체 형 변환 (Object Type Casting)](###객체-형-변환-(object-Type-Casting))
-   - [자동 형 변환 (Promotion)](####자동-형-변환-(promotion))
-   - [강제 형 변환 (Casting)](####강제-형-변환-(casting)) 
+1.  [다형성(Polymorphism)이란?](##다형성(polymorphism)이란?)
+2. [객체 형 변환 (Object Type Casting)](##객체-형-변환-(object-Type-Casting))
+   - [자동 형 변환 (Promotion)](###자동-형-변환-(promotion))
+   - [강제 형 변환 (Casting)](###강제-형-변환-(casting)) 
 
 <br>
 
@@ -13,13 +13,13 @@
 
 ---
 
-### 다형성(Polymorphism)이란?
+## 다형성(Polymorphism)이란?
 
 <mark>**같은 타입이지만 실행 결과가 다양한 객체를 이용할 수 있는 성질**</mark>
 
 <br>
 
-#### <span style="color:Cornflowerblue">" 객체를  부품화 "</span>
+### <span style="color:Cornflowerblue">" 객체를  부품화 "</span>
 
 > 자동차는 타이어 타입이고, 한국 타이어와 금호 타이어 모두 사용 가능하다. 
 >
@@ -33,7 +33,7 @@
 
 <br>
 
-#### <span style="color:Cornflowerblue">" 형변환을 통해 "</span>
+### <span style="color:Cornflowerblue">" 형변환을 통해 "</span>
 
 자바는 다형성을 위해 
 
@@ -57,7 +57,7 @@
 
 <br>
 
-#### 자동 형 변환 (Promotion)
+### 자동 형 변환 (Promotion)
 
 자식은 부모의 특징과 기능을 상속받기 때문에 부모와 동일하게 취급될 수 있다는 개념이다.
 
@@ -138,7 +138,7 @@ public class Car {
 
 ---
 
-#### 강제 형 변환 (Casting)
+### 강제 형 변환 (Casting)
 
 `부모 타입`을 `자식 타입`으로 변환하는 것을 말한다.
 
