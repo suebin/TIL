@@ -1,6 +1,6 @@
 # 다형성과 객체 형 변환 
-
-
+<br>
+<br>
 
 1.  [다형성(Polymorphism)이란?](##다형성(polymorphism)이란?)
 2. [객체 형 변환 (Object Type Casting)](##객체-형-변환-(object-Type-Casting))
