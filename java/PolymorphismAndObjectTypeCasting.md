@@ -2,17 +2,17 @@
 <br>
 <br>
 
-1. [다형성이란?](##다형성(polymorphism)이란?)
-2. [객체 형 변환](##객체-형-변환-(object-Type-Casting))
-   - [자동 형 변환](###자동-형-변환-(promotion))
-   - [강제 형 변환](###강제-형-변환-(casting)) 
+1. [다형성이란?](##다형성이란?-polymorphism)
+2. [객체 형 변환](##객체-형-변환-object-Type-Casting)
+   - [자동 형 변환](###자동-형-변환-promotion)
+   - [강제 형 변환](###강제-형-변환-casting) 
 
 <br>
 <br>
 
 ---
 
-## 다형성(Polymorphism)이란?
+## 다형성이란? Polymorphism
 
 <mark>**같은 타입이지만 실행 결과가 다양한 객체를 이용할 수 있는 성질**</mark>
 
@@ -48,7 +48,7 @@
 
 ---
 
-## 객체 형 변환 (Object Type Casting)
+## 객체 형 변환 Object Type Casting
 
 형 변환은 데이터 타입을 다른 데이터 타입으로 변환하는 행위이다. 타입 변환이라고도 한다. 
 
@@ -56,7 +56,7 @@
 
 <br>
 
-### 자동 형 변환 (Promotion)
+### 자동 형 변환 Promotion
 
 자식은 부모의 특징과 기능을 상속받기 때문에 부모와 동일하게 취급될 수 있다는 개념이다.
 
