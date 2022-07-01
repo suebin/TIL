@@ -5,17 +5,17 @@
 <br>
 
 - [예외와 예외 클래스](#예외와-예외-클래스)
-  - [일반 예외](##일반-예외-(exception))
-  - [실행 예외](###실행-예외-(runtime-exception))
+  - [일반 예외](#일반-예외-exception)
+  - [실행 예외](#실행-예외-runtime-exception)
 
-- [예외 처리 코드](##예외-처리-코드)
+- [예외 처리 코드](#예외-처리-코드)
 
-  - [try-catch-finally](###try-catch-finally)
-  - [try-with-resources](try-with-resources)
+  - [try-catch-finally](#try-catch-finally)
+  - [try-with-resources](#try-with-resources)
 
-- [예외 떠넘기기](예외-떠넘기기)
+- [예외 떠넘기기](#예외-떠넘기기)
 
-- [사용자 정의 예외](##사용자-정의-예외)
+- [사용자 정의 예외](#사용자-정의-예외)
 
   <br>
 
