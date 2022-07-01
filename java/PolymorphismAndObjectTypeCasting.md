@@ -2,10 +2,10 @@
 <br>
 <br>
 
-1. [다형성이란?](##다형성이란?-polymorphism)
-2. [객체 형 변환](##객체-형-변환-object-Type-Casting)
-   - [자동 형 변환](###자동-형-변환-promotion)
-   - [강제 형 변환](###강제-형-변환-casting) 
+1. [다형성이란?](#다형성polymorphism이란)
+2. [객체 형 변환](#객체-형-변환-object-type-casting)
+   - [자동 형 변환](#자동-형-변환-promotion)
+   - [강제 형 변환](#강제-형-변환-casting) 
 
 <br>
 <br>
