@@ -190,7 +190,8 @@ throw new XXXException(); // 기본 생성자
 throw new XXXException("메시지"); // 예외 메시지를 갖는 생성자
 ```
 
-위의 코드는 예외를 발생시키는 코드이다.사용자 정의 예외 클래스 이름은 Exception으로 끝나는 것이 좋다.
+위의 코드는 예외를 발생시키는 코드이다.
+사용자 정의 예외 클래스 이름은 Exception으로 끝나는 것이 좋다.
 
 <br>
 
