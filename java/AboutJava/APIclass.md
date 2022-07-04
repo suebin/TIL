@@ -4,8 +4,8 @@
 
 <br>
 
-- [Pattern 클래스](정규-표현식과-pattern-클래스)
-- [Wrapper 클래스](wrapper-클래스)
+- [Pattern 클래스](#정규-표현식과-pattern-클래스)
+- [Wrapper 클래스](#wrapper-클래스)
 
 <br>
 
