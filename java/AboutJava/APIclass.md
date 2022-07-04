@@ -66,4 +66,15 @@
 | float     | Float                        |
 | double    | Double                       |
 | boolean   | Boolean                      |
+<br>
+<br>
 
+---
+
+## 기타 클래스 예제
+
+- [class 클래스](https://github.com/suebin/TIL/blob/master/java/example/ClassTest.java)
+- [String 클래스](https://github.com/suebin/TIL/blob/master/java/example/StringTest.java)
+- [Date, Calendar 클래스](https://github.com/suebin/TIL/blob/master/java/example/DateTest.java)
+
+- [format 클래스](https://github.com/suebin/TIL/blob/master/java/example/DecimalFormatTest.java)
