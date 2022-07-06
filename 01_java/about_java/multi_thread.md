@@ -254,5 +254,5 @@ main () {
 
 - `synchronized 메소드` 와 `동기화 블록` : 임계 영역을 지정하기 위해 사용!
 
-​	:bulb:  관련 예제 : [SynchronizedTest](https://github.com/suebin/TIL/blob/master/01_java/example/SynchronizedTest.java)
+:bulb:  관련 예제 : [SynchronizedTest](https://github.com/suebin/TIL/blob/master/01_java/example/SynchronizedTest.java)
 
