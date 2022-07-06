@@ -92,7 +92,7 @@
 
 ## 작업 스레드 생성과 실행
 
-#### 1. java.lang.Thread 클래스 이용
+### 1. java.lang.Thread 클래스 이용
 
 :bulb:  관련 예제 : [ThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/ThreadTest.java)
 
@@ -119,7 +119,7 @@ main () {
 
    <br>
 
-#### 2. java.lang.Runnable 인터페이스 이용 (다중상속 메소드 Overriding) 
+### 2. java.lang.Runnable 인터페이스 이용 (다중상속 메소드 Overriding) 
 
 :bulb:  관련 예제 : [RunnableTest](https://github.com/suebin/TIL/blob/master/01_java/example/RunnavleTest.java)
 
@@ -180,7 +180,7 @@ main () {
 
 <br>
 
-#### :date: 스레드 스케줄링 
+### :date: 스레드 스케줄링 
 
 스레드의 개수가 코어의 수보다 많은 경우, 스레드를 어떤 순서에 의해 동시성으로 실행할 것인가를 결정한다.
 
@@ -188,7 +188,7 @@ main () {
 
 <br>
 
-##### :one: 우선순위(Priority) 방식
+#### :one: 우선순위(Priority) 방식
 
 - 우선순위가 높은 스레드가 실행 상태를 더 많이 가지도록 한다.
 
@@ -208,7 +208,7 @@ main () {
 
   <br>
 
-##### :two: 순환 할당 (Round-Robin) 방식
+#### :two: 순환 할당 (Round-Robin) 방식
 
 - 시간 할당량(Time Slice)을 정해서 하나의 스레드를 정해진 시간만큼 실행하고 다시 다른 스레드를 실행한다.
 - 자바 가상 기계에 의해 정해지기 때문에 코드로 제어할 수 없다.
