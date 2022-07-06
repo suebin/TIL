@@ -223,4 +223,4 @@ public class ThrowTest {
 
 ---
 #### 관련 예제
-[CellPhoneTest](https://github.com/suebin/TIL/blob/master/java/example/CellPhoneTest.java)
+[CellPhoneTest](https://github.com/suebin/TIL/blob/master/01_java/example/CellPhoneTest.java)

@@ -73,8 +73,8 @@
 
 ## 기타 클래스 예제
 
-- [class 클래스](https://github.com/suebin/TIL/blob/master/java/example/ClassTest.java)
-- [String 클래스](https://github.com/suebin/TIL/blob/master/java/example/StringTest.java)
-- [Date, Calendar 클래스](https://github.com/suebin/TIL/blob/master/java/example/DateTest.java)
+- [class 클래스](https://github.com/suebin/TIL/blob/master/01_java/example/ClassTest.java)
+- [String 클래스](https://github.com/suebin/TIL/blob/master/01_java/example/StringTest.java)
+- [Date, Calendar 클래스](https://github.com/suebin/TIL/blob/master/01_java/example/DateTest.java)
 
-- [format 클래스](https://github.com/suebin/TIL/blob/master/java/example/DecimalFormatTest.java)
+- [format 클래스](https://github.com/suebin/TIL/blob/master/01_java/example/DecimalFormatTest.java)
