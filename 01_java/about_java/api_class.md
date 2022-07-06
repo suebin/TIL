@@ -42,7 +42,7 @@
 
 <br>
 
-관련 예제 : [RegularExpressionTest](https://github.com/suebin/TIL/blob/master/java/example/RegularExpressionTest.java)
+관련 예제 : [RegularExpressionTest](https://github.com/suebin/TIL/blob/master/01_java/example/RegularExpressionTest.java)
 
 <br>
 
