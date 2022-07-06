@@ -169,7 +169,8 @@ main () {
 :microphone:  `getName()` : 스레드 이름을 알고 싶을 때
 
 :microphone:  `private name` 
-
+<br>
+<br>
 ---
 
 ## 스레드 우선순위
