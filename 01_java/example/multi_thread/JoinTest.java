@@ -1,3 +1,4 @@
+package multi_thread;
 class C extends Thread {
 	int data = 10;
 
