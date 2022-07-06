@@ -90,7 +90,7 @@ main() 메소드의 첫 코드부터 아래로 순차적으로 실행한다.
 
 #### 1. java.lang.Thread 클래스 이용
 
-:bulb:  관련 예제 : ThreadTest
+:bulb:  관련 예제 : [ThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/ThreadTest.java)
 
 ```java
 class A extends Thread {
@@ -117,9 +117,9 @@ main () {
 
 #### 2. java.lang.Runnable 인터페이스 이용 (다중상속 메소드 Overriding) 
 
-:bulb:  관련 예제 : RunnableTest
+:bulb:  관련 예제 : [RunnableTest](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/RunnavleTest.java)
 
-:bulb:  참고 예제 : RunnableTest2 
+:bulb:  참고 예제 : [RunnableTest2](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/RunnableTest2.java)
 
 ```java
 //이미 상속받고 있는 경우 추가 상속이 안되니까 인터페이스로!
@@ -200,7 +200,7 @@ main () {
   setPriority(Thread.NORM_PRIORITY); // 5 (기본값)
   ```
 
-  :bulb:  관련 예제 : ThreadPriorityTest
+  :bulb:  관련 예제 : [ThreadPriorityTest](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/ThreadPriorityTest.java)
 
   <br>
 
@@ -232,7 +232,7 @@ main () {
 
   - 스레드 실행을 잠시 멈추고 다른 스레드를 먼저 실행 완료하면 그 때 실행
 
-    :bulb:  관련 예제 : JoinTest
+    :bulb:  관련 예제 : [JoinTest](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/JoinTest.java)
 
 <br>
 
@@ -250,5 +250,5 @@ main () {
 
 - `synchronized 메소드` 와 `동기화 블록` : 임계 영역을 지정하기 위해 사용!
 
-​	:bulb:  관련 예제 : SynchronizedTest
+​	:bulb:  관련 예제 : [SynchronizedTest](https://github.com/suebin/TIL/blob/master/01_java/example/multi_thread/SynchronizedTest.java)
 
