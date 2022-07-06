@@ -1,4 +1,3 @@
-package multi_thread;
 // 중첩 인터페이스
 // 무명 클래스 정의
 // Runnable 하위 클래스 객체 생성

@@ -1,4 +1,3 @@
-package multi_thread;
 // 상속을 이미 받고 있는 경우 Runnable 인터페이스를 상속받는다!
 class B implements Runnable {
 	String name;

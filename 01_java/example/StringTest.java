@@ -10,7 +10,7 @@ public class StringTest {
 
 		firstInit = first.substring(0, 1);
 		middleInit = middle.substring(0, 1);
-		lastInit = last.subs`tring(0, 1);
+		lastInit = last.substring(0, 1);
 		initials = firstInit + middleInit + lastInit;
 
 		System.out.print("1. 이름: ");
