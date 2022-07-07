@@ -94,9 +94,10 @@
 
 ### 1. java.lang.Thread 클래스 이용
 
-:bulb:  관련 예제 : [ThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/ThreadTest.java)
+:bulb:  관련 예제 : 
+- [ThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/ThreadTest.java)
 
-:bulb:  관련 예제 : [MyThreadTest] (https://github.com/suebin/TIL/blob/master/01_java/example/MyThreadTest.java)
+- [MyThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/MyThreadTest.java)
 
 
 
