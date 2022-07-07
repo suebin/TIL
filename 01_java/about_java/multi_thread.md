@@ -96,6 +96,10 @@
 
 :bulb:  관련 예제 : [ThreadTest](https://github.com/suebin/TIL/blob/master/01_java/example/ThreadTest.java)
 
+:bulb:  관련 예제 : [MyThreadTest] (https://github.com/suebin/TIL/blob/master/01_java/example/MyThreadTest.java)
+
+
+
 ```java
 class A extends Thread {
     public void run() { 멀티 스레드 실행 코드; } 
