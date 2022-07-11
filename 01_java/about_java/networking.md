@@ -113,7 +113,7 @@ InetAddress ip = InetAddress.getLocalHost();
 만약 DNS에 등록된 모든 IP 주소를 얻고 싶다면 getAllByName()  메소드를 호출하면 된다.
 
 ```java
-InetAddress[] ip2 = InetAddress.getAllByName("www.multicampus.co.kr");
+InetAddress[] ip2 = InetAddress.getAllByName("www.google.co.kr"); // google의 ip 주소값
 		for(InetAddress inet : ip2) {
 			System.out.println("다음 ip="+inet.getHostAddress());
 		}
