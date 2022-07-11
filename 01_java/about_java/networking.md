@@ -91,7 +91,7 @@
 #### DNS (Domain Name System)
 
 - HTTP와 같이 응용 계층 시스템에서 도메인 이름과 IP 주소 이름 확인을 제공 
-- 사람이 읽을 수 있는 도메인 이름(ex) www.amazon.com)을 머신이 읽을 수 있는 IP주소(ex) 192.0.2.44)로 변환
+- 사람이 읽을 수 있는 도메인 이름(ex) www.amazon.com) 을 머신이 읽을 수 있는 IP주소(ex) 192.0.2.44)로 변환
 
 <br>
 
