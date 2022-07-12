@@ -13,7 +13,7 @@
 - 대용량 데이터를 효율적으로 관리
 - 여러 명의 사용자가 공유
 
-![DBMS](./image/DBMS.png)
+![DBMS](https://github.com/suebin/TIL/blob/master/02_mysql/image/DBMS.png)
 <br>
 
 ### 2-1. 관계형 DBMS (Relational DBMS)
