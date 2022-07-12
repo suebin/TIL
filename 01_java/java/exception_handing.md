@@ -30,7 +30,7 @@
 
 모든 예외 클래스들은 **java.lang.Exception** 클래스를 상속받는다.
 
-![ExceptionHanding](/01_java/about_java/exception_handing.png)
+![ExceptionHanding](/01_java/image/exception_handing.png)
 
 :mushroom: **일반 예외와 실행 예외 클래스를 구별하는 방법**
 
