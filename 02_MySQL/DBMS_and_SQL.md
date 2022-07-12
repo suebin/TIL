@@ -66,5 +66,6 @@
 - 오픈소스로 제공
 
 - `MySQL Server 8.0` : 관계형 데이터베이스(테이블) 모음
+- `MySQL Workbench 8.0` : SQL작성 (실행 툴)
 
   
