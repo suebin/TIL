@@ -1,12 +1,12 @@
 # 1. DBMS와 SQL
 
-#### 1. 데이터베이스 (Database) 
+### 1. 데이터베이스 (Database) 
 
 - "의미있고 연관된" 데이터 모음 집합체, 데이터의 저장공간
 
 
 
-####  2. DBMS(Database Management System) 
+###  2. DBMS(Database Management System) 
 
 - 데이터베이스를 관리 및 운영하는 역할
 - 메모장, 엑셀과 같은 이전 파일시스템의 단점을 보완 (ex) 사용 데이터 양이 많아지면 데이터 중복 문제)
@@ -15,7 +15,7 @@
 
 ![DBMS](./image/DBMS.png)
 
-#### 2-1. 관계형 DBMS (Relational DBMS)
+### 2-1. 관계형 DBMS (Relational DBMS)
 
 - 데이터를 행과 열의 테이블(Table)로 구조 표현
 - 관계형 DB 언어(=SQL) 사용
@@ -27,7 +27,7 @@
 
 
 
-#### 2-2. DB/DBMS 특징
+### 2-2. DB/DBMS 특징
 
 - 데이터 무결성
 
@@ -43,7 +43,7 @@
 
   
 
-#### 3. SQL
+### 3. SQL
 
 - 관계형 데이터베이스에서 사용되는 언어
 
@@ -59,7 +59,7 @@
 
   
 
-#### 4. MySQL
+### 4. MySQL
 
 - Oracle사에서 제작한 DBMS 소프트웨어
 
