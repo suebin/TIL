@@ -1,19 +1,3 @@
-# SELECT문
-
-- 조회 (DQL) - Query language
-- 가장 많이 사용하는 구문
-- 데이터베이스 내의 테이블에서 원하는 정보를 추출하는 명령
-
-- `SELECT` 컬럼(열)명 (함수, 연산자, 컬럼 별명 o)
-  - `FROM` 테이블명
-  - `WHERE`  데이터 조회를 위한 조건식 (`컬럼명` `연산자` `값`) : T/F 
-  - `GROUP BY`
-  - `HAVING`
-  - `ORDER BY`
-
-####  
-
-```MYSQL
 show databases;
 
 -- MYSQL 사용
@@ -174,18 +158,3 @@ show tables;
 create table emp_copy(select employee_name, salary, hire_date from employees);
 show tables;
 select * from emp_copy;
-```
-
-
-
-- 산술연산 : `+`, `-`, `*`, `/`
-- 비교연산 : `>`, `>=`, `<`, `<=`, `=`, `!=`
-- 논리적 결합 연산 : `or`, `and`, `not`
-- 유사 패턴 비교 : `like` , `%`, `_`
-- 목록 : `in()`
-- 범위 : `between` `and`
-  - 숫자 : 작은  => 큰 
-  - 날짜 : 오래된 => 최근
-  - 문자 : 사전 앞 => 사전 뒤 
-  - 숫자 - 대문자  - 소문자 - ... - 한글 순
-- null 값 비교 : `is`, `is not`
