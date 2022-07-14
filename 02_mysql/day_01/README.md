@@ -86,7 +86,7 @@
 
 ---
 
-# SQL의 분류
+## SQL의 분류
 
 #### 1. DDL (Data Definition Language)
 
@@ -165,7 +165,7 @@
 
 ---
 
-# SELECT문
+## SELECT문
 
 - 조회 (DQL) - Query language
 - 가장 많이 사용하는 구문
