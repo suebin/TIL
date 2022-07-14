@@ -8,8 +8,8 @@
 <br>
 <br>
 
-:milky_way: 예제 <br>
-[SELECT문(FROM, WHERE, ORDER BY)](./select.sql)
+:milky_way: **예제** <br>
+- [SELECT문(FROM, WHERE, ORDER BY)](./select.sql)
 
 <br>
 
