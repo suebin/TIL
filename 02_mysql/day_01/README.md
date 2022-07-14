@@ -19,13 +19,13 @@
 
 ## DBMS와 SQL
 
-#### 1. 데이터베이스 (Database)
+### 1. 데이터베이스 (Database)
 
 - "의미있고 연관된" 데이터 모음 집합체, 데이터의 저장공간
 
 <br>
 
-#### 2. DBMS (Database Management System)
+### 2. DBMS (Database Management System)
 
 - 데이터베이스를 관리 및 운영하는 역할
 - 메모장, 엑셀과 같은 이전 파일시스템의 단점을 보완 (ex) 사용 데이터 양이 많아지면 데이터 중복 문제)
@@ -34,7 +34,7 @@
 
 ![DBMS](./DBMS.png)
 
-#### 2-1. 관계형 DBMS (Relational DBMS)
+### 2-1. 관계형 DBMS (Relational DBMS)
 
 - 데이터를 행과 열의 테이블(Table)로 구조 표현
 - 관계형 DB 언어(=SQL) 사용
@@ -46,7 +46,7 @@
 
 <br>
 
-#### 2-2. DB/DBMS 특징
+### 2-2. DB/DBMS 특징
 
 - 데이터 무결성
 - 데이터 독립성
@@ -57,7 +57,7 @@
 
 <br>
 
-#### 3. SQL
+### 3. SQL
 
 - 관계형 데이터베이스에서 사용되는 언어
 
@@ -73,7 +73,7 @@
 
   <br>
 
-#### 4. MySQL
+### 4. MySQL
 
 - Oracle사에서 제작한 DBMS 소프트웨어
 - 오픈소스로 제공
@@ -88,7 +88,7 @@
 
 ## SQL의 분류
 
-#### 1. DDL (Data Definition Language)
+### 1. DDL (Data Definition Language)
 
 - 데이터 정의 언어
 
@@ -104,7 +104,7 @@
 
     <br>
 
-#### 2. DML (Data Manipulation Language)
+### 2. DML (Data Manipulation Language)
 
 - 데이터 조작 언어
 
@@ -128,7 +128,7 @@
 
       <br>
 
-#### 3. DQL (Data Query Language)
+### 3. DQL (Data Query Language)
 
 - 데이터 질의 언어
 
@@ -138,7 +138,7 @@
 
     <br>
 
-#### 4. DCL (Data Control Language)
+### 4. DCL (Data Control Language)
 
 - 데이터 제어 언어
 
@@ -153,7 +153,7 @@
 
   <br>
 
-#### 5. TCL (Transaction Control Language)
+### 5. TCL (Transaction Control Language)
 
 - 일부에서는 DCL에서 트랜잭션을 제어하는 명령어인 `COMMIT`과 `ROLLBACK` 만을 따로 분리해서 TCL이라고 표현하기도 한다.
   - `COMMIT` : 트랜잭션의 작업 결과를 반영
