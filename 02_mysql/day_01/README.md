@@ -2,6 +2,8 @@
 
 <br>
 
+:milky_way:  **목차** <br>
+
 - [DBMS와 SQL](#dbms와-sql)
 - [SQL의 분류](#sql의-분류)
 - [SELECT문](#select문)
