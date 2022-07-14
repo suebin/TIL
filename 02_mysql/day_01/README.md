@@ -16,6 +16,12 @@
 <br>
 <br>
 
+:milky_way: **책 범위**
+- chap 01. DBMS 개요와 MySQL 소개
+- chap 06. SQL 기본
+<br>
+<br>
+
 ---
 
 ## DBMS와 SQL
