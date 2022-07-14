@@ -6,11 +6,11 @@
 - [SQL의 분류](#sql의-분류)
 - [SELECT문](#select문)
 <br>
+<br>
 
 :milky_way: **예제** 
 [SELECT문(FROM, WHERE, ORDER BY)](./select.sql)
 
-<br>
 <br>
 
 ---
@@ -30,7 +30,7 @@
 - 대용량 데이터를 효율적으로 관리
 - 여러 명의 사용자가 공유
 
-[![DBMS](./DBMS.png)
+![DBMS](./DBMS.png)
 
 #### 2-1. 관계형 DBMS (Relational DBMS)
 
