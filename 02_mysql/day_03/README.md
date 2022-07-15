@@ -190,7 +190,7 @@
 
 :bulb:
 
-`from` 뒤 테이블이 2개 이상이면 조인이다.
+`from` 뒤 테이블이 2개 이상이면 조인이다. 아래는 INNER JOIN(내부 조인) 문법이다.
 
 - `select`
   - `from` 테이블1 `inner join` 테이블2, ...
