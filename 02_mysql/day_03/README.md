@@ -197,10 +197,10 @@
 - 가장 많이 사용하는 조인
 
 
-- `select`
-- `from` 테이블1 `inner join` 테이블2, ...
-- `on` 조인 조건
-- `where` 검색 조건
--  `gruop by`
-- `having`
-- `order by`
+  - `select`
+  - `from` 테이블1 `inner join` 테이블2, ...
+  - `on` 조인 조건
+  - `where` 검색 조건
+  -  `gruop by`
+  - `having`
+  - `order by`
