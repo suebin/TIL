@@ -4,17 +4,17 @@
 :milky_way: **목차**
 - [자주 쓰는 MySQL 데이터 형식](#자주-쓰는-mysql-데이터-형식)
 - [MySQL 내장 함수](#mysql-내장-함수)
-- [조인](#조인)
+- [INNER JOIN](#조인)
 <br>
 <br>
 
 :milky_way: **예제**
-- [MySQL 내장 함수 및 조인](./day_03.sql)
+- [MySQL 내장 함수 및 INNER JOIN](./day_03.sql)
 <br>
 <br>
 
 :milky_way: **책 범위**
-- chap 07. SQL 고급
+- chap 07. SQL 고급 : 237~280P
 <br>
 <br>
 
@@ -190,9 +190,12 @@
 
 <br>
 
-:bulb:
 
-아래는 INNER JOIN(내부 조인) 문법이다.
+
+### INNER JOIN (내부 조인) 
+
+- 가장 많이 사용하는 조인
+
 
 - `select`
 - `from` 테이블1 `inner join` 테이블2, ...
