@@ -186,3 +186,16 @@
 
 2개 이상의 테이블을 나누어 효율적으로 데이터를 관리하는 것이 좋다.
 
+<br>
+
+:bulb:
+
+`from` 뒤 테이블이 2개 이상이면 조인이다.
+
+- `select`
+  - `from` 테이블1 `inner join` 테이블2, ...
+- `on` 조인 내용
+- `where`
+-  `gruop by`
+- `having`
+- `order by`
