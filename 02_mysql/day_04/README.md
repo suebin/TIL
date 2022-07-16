@@ -4,11 +4,11 @@
 
 :milky_way: **목차**
 
-- **조인**
+- [조인](#조인)
   - [JOIN](#join)
   - [UNION, UNION ALL / NOT IN, IN](#union-union-all--not-in-in)
 
-- **테이블**
+- [테이블](#테이블)
   - [테이블 만들기](#테이블-만들기)
     - [MySQL Workbench에서 테이블 생성](#1-mysql-workbench에서-테이블-생성)
     - [SQL로 테이블 생성](#2-sql로-테이블-생성)
@@ -42,7 +42,7 @@
 <br>
 
 ---
-
+## 조인
 ### JOIN 
 
 <br>
