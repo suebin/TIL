@@ -6,7 +6,7 @@
 
 - **조인**
   - [JOIN](#join)
-  - [UNION, UNION ALL / NOT IN, IN](#union-union-all--not-in-in))
+  - [UNION, UNION ALL / NOT IN, IN](#union-union-all--not-in-in)
 
 - **테이블**
   - [테이블 만들기](#테이블-만들기)
