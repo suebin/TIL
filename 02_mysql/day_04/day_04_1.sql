@@ -1,4 +1,4 @@
--- 7장. SQL 고급 : 274~294P
+-- chap 07. SQL 고급 : 274~294P
 -- JOIN QUERY  
 -- 1. INNER JOIN (내부 조인) : 274~283P
 SELECT FIRST_NAME 사원명, E.DEPARTMENT_ID 부서코드, DEPARTMENT_NAME 부서명 
