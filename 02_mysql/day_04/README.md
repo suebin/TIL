@@ -42,8 +42,8 @@
 <br>
 
 ---
-## 조인
-### JOIN 
+# 조인
+## JOIN 
 
 <br>
 
@@ -70,7 +70,7 @@
 
 
 
-### UNION, UNION ALL / NOT IN, IN
+## UNION, UNION ALL / NOT IN, IN
 
 - `UNION` : 두 쿼리의 결과를 행으로 합치는 것이다.
   - `UNION`  : 중복된 열은 제거되고 데이터가 정렬되어 나온다.
@@ -87,11 +87,11 @@
 
 ---
 
-## 테이블
+# 테이블
 
-### 테이블 만들기 
+## 테이블 만들기 
 
-#### 1. MySQL Workbench에서 테이블 생성 
+### 1. MySQL Workbench에서 테이블 생성 
 
 1. user 'emp2' 만들기 
    - `root`로 접속 - `administration` - `users and privileges` - `add account`
@@ -110,7 +110,7 @@
 
 
 
-#### 2. SQL로 테이블 생성
+### 2. SQL로 테이블 생성
 
 - 책 320~324p 와 위의 테이블 예제 참조 
 
@@ -123,7 +123,7 @@
 
 <br>
 
-### 제약조건 (Constraint)
+## 제약조건 (Constraint)
 
 - 데이터의 무결성을 지키기 위한 제한된 조건을 의미한다.
 - 특정 데이터 입력 시 무조건적으로 입력되는 것이 아닌, 어떤 조건을 만족했을 때 입력되도록 제한한다.
