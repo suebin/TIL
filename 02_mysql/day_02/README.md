@@ -4,7 +4,7 @@
 
 :milky_way: **예제**
 - [employees 데이터베이스](./employees_db) 
-    - 지금부터 day_04 조인 예제까지는 employees 데이터베이스를 사용한다.
+    - `지금부터 day_04 조인 예제까지는 employees 데이터베이스를 사용한다.`
 - [SELECT문(GROUP BY, HAVING), DML(INSERT문, DELETE문, UPDATE문)](./day_02.sql)
 <br>
 <br>
