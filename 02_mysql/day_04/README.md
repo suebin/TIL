@@ -135,7 +135,7 @@
 1. `not null` (=nn) : null 허용 x 
 
 2. `unique key` (=uk) : 중복값 허용 x
-3. `primary key` (=pk) : not  null + unique
+3. `primary key` (=pk) : not null + unique
 4. `check` : 사용자 정의 (ex) `check (email like '%@%')`, `check (length(password)<=4)`
 5. `foreign key` : 다른 테이블의 다른 컬럼에 존재하는 값만 저장 가능
 
