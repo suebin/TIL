@@ -1,4 +1,4 @@
-# MySQL과 Eclipse 연동하기
+# MySQL과 Eclipse 연동
 ## java program jdbc 순서
 
 1. DB 연결 (종류, ip, port 계정, 암호)
