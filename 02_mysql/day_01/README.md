@@ -1,4 +1,4 @@
-# DAY 01
+# DBMS와 SQL, SELECT문
 
 <br>
 
