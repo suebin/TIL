@@ -1,3 +1,4 @@
+package test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -13,7 +14,7 @@ public class SelectTest2 {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("드라이버 호출 완료");
 		//1. db연결
-		con = DriverManager.getConnection("jdbc:mysql://192.168.200.146:3306/empdb", 
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/empdb", 
 				"emp2", "emp2");//emp2 계정은 모든 db 사용 권한
 		System.out.println("연결 성공");
 		

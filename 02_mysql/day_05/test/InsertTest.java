@@ -1,3 +1,4 @@
+package test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,12 +12,12 @@ public class InsertTest {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("드라이버 호출 완료");
 		//1. db연결
-		/*Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/empdb", 
+		/*Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/empdb", 
 				"emp", "emp"); //emp 계정은 empdb만 사용 권한 
 		*/
-		con = DriverManager.getConnection("jdbc:mysql://192.168.200.146:3306/memberdb", 
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/memberdb", 
 				"emp2", "emp2");//emp2 계정은 모든 db 사용 권한
-		/*Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/memberdb", 
+		/*Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/memberdb", 
 				"root", "1234");//root계정은 사용사 생성 + 모든 db 사용 권한
 		*/
 		System.out.println("연결 성공");
