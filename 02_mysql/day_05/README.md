@@ -29,3 +29,45 @@
 - SQL 명령어 실행 (PreparedStatement)
 - select 명령어의 경우 결과셋 리턴(ResultSet)
 - 데이터베이스 연결 종료
+
+<br>
+
+```java
+Connection con = null;
+try {
+  
+// MySQLl driver 호출    
+Class.forName("com.mysql.cj.jdbc.Driver"); ////Connection J jar file 클래스 이름
+    
+// DB 연결
+con = DriverManager.getConnection(url, user, password); 
+   
+// SQL문 만들기
+String sql = "Select * from ...";
+    
+// 명령어 생성
+Statement st = con.createStatement();
+    
+// 명령어 실행
+ResultSet rs = st.executeQuery(sql);
+ 
+// 레코드 하나씩 읽기    
+while (rs.next()) {
+   // 출력하기 (columnLabel, columnindex)
+   System.out.println(rs.getString("id") + " : " + rs.getInt("pw"));  
+}
+    
+rs.close();    
+    
+// 예외 처리 필수
+} catch () {
+    
+} finally {
+    // DB 연결 종료
+    try {
+        con.close();
+    } catch (SQLException e) {}
+}
+```
+
+
