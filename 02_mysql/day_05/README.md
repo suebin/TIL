@@ -8,4 +8,4 @@
 
 ## Connector J 연결
 1. Eclips Java Project 생성 - Build Path - Libraries - Add External JARs 
-2. 자바 프로젝트 폴더 내부의 Referenced Libraries - MySQL Connector java 8.0.29.jar 만들어짐
+2. 자바 프로젝트 폴더 내부 Referenced Libraries - MySQL Connector java 8.0.29.jar 확인
