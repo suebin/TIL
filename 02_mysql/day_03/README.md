@@ -1,10 +1,10 @@
-# DAY 03
+# MySQL 데이터 형식과 함수, 조인
 <br>
 
 :milky_way: **목차**
 - [자주 쓰는 MySQL 데이터 형식](#자주-쓰는-mysql-데이터-형식)
 - [MySQL 내장 함수](#mysql-내장-함수)
-- [JOIN과 INNER JOIN](#조인)
+- [JOIN](#조인)
 <br>
 <br>
 
