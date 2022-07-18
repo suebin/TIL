@@ -48,7 +48,7 @@ String sql = "Select * from ...";
 // 명령어 생성
 Statement st = con.createStatement();
     
-// 명령어 실행
+// 명령어 실행 (결과셋 리턴)
 ResultSet rs = st.executeQuery(sql);
  
 // 레코드 하나씩 읽기    
