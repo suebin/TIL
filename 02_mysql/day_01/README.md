@@ -7,20 +7,13 @@
 - [DBMS와 SQL](#dbms와-sql)
 - [SQL의 분류](#sql의-분류)
 - [SELECT문](#select문)
-<br>
-<br>
 
 :milky_way:  **예제** <br>
 - [SELECT문(FROM, WHERE, ORDER BY)](./select.sql)
 
-<br>
-<br>
-
 :milky_way: **책 범위**
 - chap 01. DBMS 개요와 MySQL 소개
 - chap 06. SQL 기본
-<br>
-<br>
 
 ---
 
@@ -87,8 +80,6 @@
 - `MySQL Server 8.0` : 관계형 데이터베이스(테이블) 모음
 - `MySQL Workbench 8.0` : SQL작성 (실행 툴)
 
-<br>
-<br>
 
 
 ---
@@ -167,8 +158,6 @@
   - `ROLLBACK` : 트랜잭션의 작업 취소 및 원래대로 복구
 
 
-<br>
-<br>
 
 ---
 
