@@ -1,4 +1,12 @@
 # MySQL과 Eclipse 연동
+<br>
+
+:milky_way: **예제**
+- [test 모음](./test/) 
+
+<br>
+
+---
 ## Database Programing 일반적 순서
 1. DBMS 연결 (종류, ip, port 계정, 암호)
 2. SQL 명령어 실행 (정의, 전송)
