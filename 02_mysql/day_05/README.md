@@ -17,6 +17,7 @@
 ## JDBC (Java DataBase Connectivity)
 - 자바와 데이터베이스의 연동 작업을 지원하는 기술
 - 자바에서는 interface만 제공하고, DBMS 제조사에서 class 구현
+- JDBC 드라이버는 java.sql.인터페이스 상속 받아 메소드를 오버라이딩한 클래스 모음
 - JDBC 드라이버 : DBMS에 대한 세부 작업을 담당하는 라이브러리, jar 파일로 제공 (ex) MySQL Connector J)
 
 ## MySQL Connector J 연결
