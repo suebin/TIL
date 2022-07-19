@@ -46,10 +46,13 @@ con = DriverManager.getConnection(url, user, password);
 String sql = "Select * from ...";
     
 // 명령어 생성
-Statement st = con.createStatement();
+Statement st = con.createStatement(); 
     
-// 명령어 실행 (결과셋 리턴)
+// 명령어 실행 (결과셋 리턴: select문인 경우)
 ResultSet rs = st.executeQuery(sql);
+
+// 데이터를 추가, 삭제, 수정하는 SQL 문을 실행
+int rows = st.executeUpdate("insert, update, delete"):1; // 변화시킬 행의 개수
  
 // 레코드 하나씩 읽기    
 while (rs.next()) {
