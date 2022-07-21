@@ -21,10 +21,10 @@
 ## 태그 (Tag)
 
 - 요소를 만들 때 사용하는 작성 방법
-- ex) <h1>, <br>, <p>, <a>
+- ex) `h1`, `br`, `p`, `a`
 
 ## 속성 (Attribute)
 
 - 태그에 추가 정보를 부여할 때 사용하는 것
-- ex) style, id, class
+- ex) `style`, `id`, `class`
 - <태그속성 = “값”> 형태
