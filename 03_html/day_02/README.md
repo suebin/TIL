@@ -14,12 +14,15 @@
 ## 입력 양식 종류
 
 - `form` : 입력 양식의 시작과 끝 표시
-  - `input`
+
+- `input`
     - text, button, checkbox, file, hidden, image, password,  radio, reset, submit
-  - `textarea`
+
+- `textarea`
     - cols/rows
-  - `select`  `option`
-  - `fieldset` `legend`
+- `select`  `option`
+
+- `fieldset` `legend`
 
 ## HTML 추가 태그
 
@@ -36,7 +39,7 @@
 		숫자 : <input type="number" name="na"><br> 
 		범위 : <input type="range" name="ra"><br>
 		<input type=submit value="전송">
-	</form>
+</form>
 ```
 
 ---
