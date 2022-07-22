@@ -3,7 +3,7 @@
 <br>
 
 :milky_way: **예제**
-- [test 모음](./test)
+- [상품 등록 페이지](./test/productform.html)
 
 <br>
 
