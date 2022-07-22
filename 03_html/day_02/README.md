@@ -38,7 +38,7 @@
 		폰번호 : <input type="tel" neme="te"><br> 
 		숫자 : <input type="number" name="na"><br> 
 		범위 : <input type="range" name="ra"><br>
-		<input type=submit value="전송">
+		<input type=submit value="전송"> 
 </form>
 ```
 
@@ -51,5 +51,5 @@
 - `div` : block level element
 - `span`  : inline level element
 
-## 시멘틱 태그
+## 시멘틱 태그 (Semantic tag)
 ![시멘틱 태그](./tag.png)
