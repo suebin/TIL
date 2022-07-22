@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> 폼태그 연습 </h1>
+<form action="a.jsp">
+	
+	아이디 입력 : <input type="text" name="id" size="5" maxlength="3"><br>
+	암호 입력 : <input type="password" name="pw" value="기본값"><br>
+	관리자 여부 : <input type="hidden" name="admin" value="true"><br>
+	
+	<!-- radio는 한 개만 선택 가능 -->
+	성별 : <input type=radio name="gender" value="남자" checked="checked"> male
+			<input type=radio name="gender" value="여자"> female
+	
+	<!-- checkbox는 여러 개 선택 가능 -->		
+	취미 : <input type=checkbox name="hobby" value="music"> 음악감상
+	<input type=checkbox name="hobby" value="movie" checked="checked"> 영화감상
+	<input type=checkbox name="hobby" value="it" checked="checked"> it
+	<input type=checkbox name="hobby" value="none"> 안한다
+	
+	파일 업로드 : <input type=file name="uploadfile"><br>
+			<input type=image src="images/google.png"><br>
+	
+	<input type=text name="id" size="5" maxlength="3">
+	<input type=submit value="전송">
+	<input type="reset" value="취소">
+	<input type=button value="아무것도안함"> <!-- 기능 사용자정의 -->
+</form>
+</body>
+</html>
