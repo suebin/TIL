@@ -13,14 +13,14 @@
 
 ## 입력 양식 종류
 
-- `form`
-- <form action=”전송 위치” method=”전송 방식”>
-    - `input`
-        - text, button, checkbox, file, hidden, image, password,  radio, reset, submit
-    - `textarea`
-        - cols/rows
-    - `select`  `option`
-    - `fieldset` `legend`
+- `form` : 입력 양식의 시작과 끝 표시
+- `<form action=”전송 위치” method=”전송 방식”>`
+  - `input`
+    - text, button, checkbox, file, hidden, image, password,  radio, reset, submit
+  - `textarea`
+    - cols/rows
+  - `select`  `option`
+  - `fieldset` `legend`
 
 ## HTML 추가 태그
 
