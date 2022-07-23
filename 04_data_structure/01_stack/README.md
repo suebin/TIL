@@ -2,7 +2,9 @@
 
 ## 스택 (Stack) 이란 ?
 
-물건을 쌓아 올리듯이 데이터를 쌓는 자료구조로, 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 자료구조(Linear Data Structur)이다. ‘Pushdown list’라 부르기도 한다.
+물건을 쌓아 올리듯이 데이터를 쌓는 자료구조로, 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 자료구조(Linear Data Structur)이다. 
+
+‘Pushdown list’라 부르기도 한다.
 
 자료를 넣는 것을 Push 라고 하고, 꺼내는 것을 Pop 이라고 한다.
 
