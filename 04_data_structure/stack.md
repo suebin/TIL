@@ -20,7 +20,7 @@
 
 데이터를 스택에 넣는다.
 
-![push](./push.png)
+![push](./images/push.png)
 
 step 1 : 스택이 가득 찼는지 확인
 
@@ -36,7 +36,7 @@ step 4 : Top이 가리키는 스택 위치에 데이터 추가
 
 데이터를 스택에서 꺼내온다. 즉, 제거한다.
 
-![pop](./pop.png)
+![pop](./images/pop.png)
 
 step 1 : 스택이 비어 있는지 확인
 
