@@ -1,19 +1,4 @@
-## 자료구조 (Data Structure)
-
-일련의 일정 타입들의 데이터 모임 또는 관계를 나타낸 구성체이다. 
-
-## 형태에 따른 자료구조
-
-- 선형 자료구조 (Linear Data Structure)
-    - 데이터가 일렬로 연결된 형태
-    - 리스트(List), 큐(Queue), 덱(Deque)
-- 비선형 자료구조 (Nonlinear Data Structure)
-    - 선형 자료구조의 반대
-    - 일렬로 나열된 것이 아닌, 각 요소가 여러 개의 요소와 연결된 형태 (ex) 거미줄)
-    - 그래픽(Graph), 트리(Tree)
-- 집합 자료구조
-    - 집합(Set)
-- 파일 자료구조
+# 스택 (Stack)
 
 ## 스택 (Stack) 이란 ?
 
