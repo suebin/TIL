@@ -81,7 +81,7 @@ Stack<E> stack = new Stack();
 // 값 추가
 stack.push(추가할 값);
 
-// 값 삭제
+// 값 꺼내기 (삭제)
 stack.pop();
 
 // 전체 값 삭제 (초기화)
