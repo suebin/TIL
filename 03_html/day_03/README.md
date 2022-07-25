@@ -1,12 +1,5 @@
 # CSS3 (Cascading Style Sheets) 선택자와 속성
 
-<br>
-
-:milky_way: **예제**
-- 
-
-<br>
-
 ---
 
 # CSS 선택자
