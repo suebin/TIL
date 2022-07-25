@@ -83,4 +83,4 @@ ex) inline, block, flexbox, %, px, green 등이 있다.
 # CSS 속성
 
 ## 1. 박스 속성
-![box](./box.png)
+![box](./box_model.png)
