@@ -1,6 +1,5 @@
 # CSS3 (Cascading Style Sheets) 선택자와 속성
 
----
 
 # CSS 선택자
 ## CSS란 ?
