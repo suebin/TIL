@@ -77,10 +77,19 @@ CSS 우선순위
 
 스타일 값으로 입력할 수 있는 단위에는 키워드, 크기, 색상, URL이 있다.
 
-ex) inline, block, flexbox, %, px, green 등이 있다.
+ex) `inline`, `block`, `flexbox`,`%`, `px`, `green` 등이 있다.
 
 ---
 # CSS 속성
 
 ## 1. 박스 속성
 ![box](./box_model.png)
+
+## 2. 가시 속성
+- ex) `display`
+
+## 3. 배경 속성
+- ex) `background-image`, `background-size`, `background-position`
+
+## 4. 글자 속성
+- ex) `font-size`,  `font-weight`, `font-style`, `text-align` 
