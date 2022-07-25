@@ -52,4 +52,4 @@
 - `span`  : inline level element
 
 ## 시멘틱 태그 (Semantic tag)
-![시멘틱 태그](./Semantic%20tag.png)
+![시멘틱 태그](./semantic%20tag.png)
