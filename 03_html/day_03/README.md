@@ -86,3 +86,13 @@ ex) `inline`, `block`, `flexbox`,`%`, `px`, `green` 등이 있다.
 
 ## 4. 글자 속성
 - ex) `font-size`,  `font-weight`, `font-style`, `text-align` 
+
+## 5. 위치 속성 : Position
+
+- defalut : `static`
+- 절대 위치 좌표 : `absolute`, `fixed`
+- 상대 위치 좌표 : `relative`, `static`
+
+## 6. 유동 속성
+
+`float`
