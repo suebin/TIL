@@ -48,7 +48,7 @@ deque.pollLast();
 deque.removeFirst(); // 덱이 비어있으면 예외 발생 // remove(), pop()과 동일 
 deque.removeLast();
 
-// 맨 앞의 값 출력
+// 맨 앞과 맨 뒤의 값 출력
 deque.peekFirst(); // 덱이 비어있으면 null //peek()와 동일
 deque.peekLast();
 
