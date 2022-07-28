@@ -76,7 +76,7 @@ step 5 : 성공을 반환
 
 ```java
 // Stack 선언
-Stack<E> stack = new Stack();
+Stack<E> stack = new Stack<>();
 
 // 값 추가
 stack.push(추가할 값);
