@@ -73,13 +73,16 @@ setInterval(function(){}, 1000);
 
 ## 배열의 forEach 메서드
 - 교재 321p
-- 대표적인 callback function
+- 대표적인 callback function이다.
 - 배열의 요소를 순차적으로 검색하여 그 값을 함수의 인수로 넘기기를 반복한다.
 ```jsx
 var a = [5,4,3];
 a.forEach(function(val) { console.log(val); });
 ```
 - 이터레이션 (iteration) : 반복 처리, 데이터 안의 요소를 연속적으로 꺼내는 행위이다.
+
+<br>
+
 ---
 
 ## 객체 (Object)
