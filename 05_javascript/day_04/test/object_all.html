@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+// 객체 생성하는 법 !
+
+// 1. 객체 값 저장 표현 (객체 정의 및 생성)
+var product = {
+		code : "001-100",
+		title : "삼성컴퓨터",
+		price : 45000.55,
+		amount : 10,
+		setPrice : function(price) { // -10000
+			this.price = this.price + price; 
+		},
+		toString : function() {
+			return "상품정보 = " + this.code + " : " + this.title + " : " + this.price + " : " + this.amount;
+		}
+} // product end
+
+product.detail = "2021년도 모델입니다."
+product.setPrice(10000); // 10000원 올려라!
+document.write(product+"<br>"); 
+
+//2. 생성자 함수 정의 
+function Product (code, title, price, amount) {
+	this.code = code;
+	this.title = title;
+	this.price = price;
+	this.amount = amount;
+	this.setPrice = function(price) { // -10000
+		this.price = this.price + price; 
+	}
+	this.toString = function() {
+		return "상품정보 = " + this.code + " : " + this.title + " : " + this.price + " : " + this.amount;
+	}
+}
+
+// 객체 생성
+var p1 = new Product("001-100", "삼성모니터", 45000, 10); // 객체 생성
+// p1에 detail이 있니 ? (특정변수가 객체 내부에 있는지 알아보는 방법)
+document.write(('detail' in p1) + "<br>"); // false
+	p1.detail = "2021년도 모델입니다.";
+	document.write(('detail' in p1) + "<br>"); // true
+	
+	delete p1.detail;
+	document.write(('detail' in p1) + "<br>"); // false
+	
+	p1.setPrice(10000); // 10000원 올려라!
+	document.write(p1+"<br>"); 
+
+</script>
+</body>
+</html>

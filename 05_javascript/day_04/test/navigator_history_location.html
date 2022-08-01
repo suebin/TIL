@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 1. Navigator 객체 -->
+
+<h1>브라우저 정보 객체</h1>
+<script>
+document.write("<h3>웹 브라우저 내부 코드 네임 = " + navigator.appCodeName + "</h3>");
+document.write("<h3>웹 브라우저가 USER-AGENT 헤더에 보내는 문자열 = " + navigator.userAgent + "</h3>");
+document.write("<h3>웹 브라우저 플랫폼 = " + navigator.platform + "</h3>");
+
+if(navigator.userAgent.indexOf("Chrome") >= 0) {
+	/*크롬 브라우저*/
+}
+else if(navigator.userAgent.indexOf("Edg") >= 0) {
+	/*엣지 브라우저*/
+}
+else if(navigator.userAgent.indexOf("Trident") >= 0) {
+	/*ie 브라우저*/
+}
+
+// geolocation! - geolocation.html 예제
+
+</script>
+
+
+<!-- 2. History 객체 -->
+
+<a href = "javascript:history.go(-1)">이전으로 가기(뒤로 버튼)</a>
+<a href = "javascript:history.back()">이전으로 가기(뒤로 버튼)</a>
+<a href = "javascript:history.go(1)">앞으로 가기(앞으로 버튼)</a>
+<a href = "javascript:history.forward()">앞으로 가기(앞으로 버튼)</a> 
+
+
+<!-- 3. Location 객체 -->
+
+<input type=button value="구글로 이동" id="move">
+
+<script>
+document.getElementById("move").onclick = function() {
+	location.href="http://google.com";
+}
+</script>
+
+
+<!-- 나중에 언제 사용할까?  
+
+<form id="f" action="jdbc 웹 실행 파일 = a.jsp"> 3. 보내기 -> 4. MySQL에 저장
+<input ...> 1. 입력받기
+<input type=submit value="전송"> 2. 전송하기
+</form>
+
+<script>
+document.getElementById("f").onsubmit = function() {
+	location.href = "http://google.com";
+}
+</script>
+
+-> action이 있으면 이동, 아니라면 location.href에 쓰여진 곳으로 이동하도록 만들 때 보통 사용
+
+-->
+
+</body>
+</html>

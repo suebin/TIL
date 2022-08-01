@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window객체</title>
+
+<!-- Window 객체 -->
+<script>
+	window.onload = function() {
+		var childwindow; // 자식 창
+		document.getElementById("open").onclick = function() {
+			childwindow = window.open("newpage.html", "new page", "width=400, height=400, top=100, left=150," 
+					+ "resizable=yes, location=yes");
+			
+
+			childwindow.onload = function() { // body 로딩이 완료될 때까지 대기
+				childwindow.document.getElementById("test").innerHTML = "<h3>부모(window)가 추가하여 전송합니다.</h3>";
+				childwindow.document.getElementById("test").style = "color:green";
+			}
+			
+		}
+		document.getElementById("close").onclick = function() {
+			childwindow.close();
+		}
+	}
+	
+</script>
+
+</head>
+<body>
+	<input type=button value="새창열기" id="open">
+	<input type=button value="새창닫기" id="close">
+	<div id="fromchild'></div>
+</body>
+</html>

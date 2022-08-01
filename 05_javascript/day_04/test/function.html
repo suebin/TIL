@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+
+// 제 8장 ~ 264p 까지
+
+var b = "<br>"
+// 1. 함수 선언문으로 정의
+function a (b) { 
+	if (typeof(b) == 'number')	return b * b;
+	else return b;
+}
+
+document.write(a(10) + b); // 100
+document.write(a("10") + b); // 10
+document.write(a("십") + b);  // 십
+
+// 2. 함수 리터럴로 정의 (함수 변수값 정의)
+let c = function (d) { return d + d; }
+
+document.write(c(10) + b); // 20
+document.write(c("javascript") + b); // javascriptjavascript 
+document.write(c + b); // c 함수 정의 내용을 보여준다. (함수를 변수처럼 취급하기 때문)
+
+// 3. c 타입은 function : 함수를 변수처럼 취급 (number, string, boolean, undefined, function)
+document.write(typeof(c) + b); // function
+
+// 4. 중첩 함수 (Nested Function)
+// 4-1. 함수 내부에서 지역변수처럼 함수를 포함
+function outer () {
+	document.write(inner() + b); // 지역함수 호출
+	function inner() { return "inner"; } // 지역함수 선언
+}
+outer();
+// inner(); : error
+// outer().inner(); : error
+
+// 4-2. 리턴결과로 함수를 리턴
+function return_f1 () {
+	return function () { return "inner"; } 
+}
+
+var return_f2 = return_f1(); // return_f1 호출값을 return_f2에 저장
+document.write(return_f2 + b); // 리턴값 함수 구현부 소스 출력
+document.write(return_f2() + b); // 리턴값 함수 실행 결과 출력
+
+// 4-3. 매개변수(= 인수)로 함수를 선언 (자주 사용한다!) : 262~264p
+function arg_f1 (a) { // a 타입 아직 모르고, 전달받아야 알 수 있다.
+	//a 함수 실행 결과
+	if (typeof(a) == 'function') { a(); }
+	else { alert(a); }
+}
+
+function arg_f2 () {
+	alert("arg_f2 함수 실행합니다.");
+}
+
+arg_f1(arg_f2); 
+arg_f1(10); 
+
+/*
+매개변수에 함수를 전달하는 예 : setTimeout 
+
+setTimeout(function(){}, 1000);
+
+function setTimeout(a, b) {
+	b(정수)의 시간(1/1000초) 경과된 이후에
+	a 함수 실행
+	
+	sleep(b);
+	a();
+}
+*/
+
+// 이벤트 처리할 때에 함수 내부에 함수를 전달하는 경우도 있다!
+
+// 즉시 실행 함수(정의하자마자 1번만 호출) : 260p 
+let a = (function() { alert("test");})();
+		(function(a) { alert("test");})(10);
+
+// 함수의 인수(매개변수) : 262 ~ 264p
+
+// 1. 매개변수 다른 함수 3개 정의 실행
+// function arg_f3 () { alert("동일 내용 출력"); }
+// function arg_f4 (a) { alert(a.id + ":" + a.name+ "==> a 매개변수에 따라 실행 내용 다름"); }
+// function arg_f5 (a, b, c) { alert("3개의 매개변수에 따라 실행 내용 다름")}
+
+// arg_f3(10);      // 실행ok
+// arg_f4();        // 실행ok (a = undefined 취급) 
+// arg_f4([1,2,3]); // 실행ok (a 매개변수 배열)
+ 
+// var b = {id:1, name:'홍길동'};
+// arg_f4(b);
+
+// 2. 매개변수 개수
+function arg_f6(a) {
+	// 정확한 조건을 준다.
+	if (arguments.length >= 1 && typeof(arguments[0]) instanceof Array && a.length >=1) // arguments : 함수로 전달하는 매개변수값 모아놓은 배열 
+	alert(a[0]);
+}
+
+// 2-1. 매개변수 없을 때
+arg_f6();
+
+// 2-2. 매개변수 1개 (숫자)
+arg_f6(1);
+
+// 2-3. 매개변수 1개 (배열) : 실행 ok
+arg_f6([1,5,10]);
+
+// 2-4. 매개변수 5개 (숫자)
+arg_f6(1,2,3,4,5);
+
+// 3. 화살표 함수 : 317p
+
+// 3-1.매개변수 x
+var func = ()=> {return 10*10;}
+document.write(func() + b);
+
+// 3-2. 매개변수 1개 화살표 함수
+var func2 = (x) => {return x*x;}
+document.write(func2(5) + b);
+
+// 3-3. 매개변수가 1개이면 () 생략 가능, 구현부에 return문 1개이면 return{} 생략 가능
+var func3 = x => x*x;
+
+// 3-4. 화살표 함수 정의 동시에 실행
+document.write((x => x*x)(5) + b);
+
+</script>
+
+</body>
+</html>
