@@ -44,7 +44,7 @@ var square = x => x*x;
 ## 콜백 함수 (Callback Function)
 
 - 교재 315p ~ 316p
-- 파라미터(매개변수)로  함수를 전달받아, 함수의 내부에서 실행하는 함수
+- 파라미터(매개변수)로 함수를 전달받아, 함수의 내부에서 실행하는 함수이다.
 - 이벤트 처리 시 자주 사용한다.
 - jQuery에서도 볼 수 있다.
 
@@ -60,7 +60,7 @@ setInterval(function(){}, 1000);
 
 ## 화살표 함수 (Arrow Function Expression)
 - 교재 317p ~ 318p
-- 전통적인 함수표현의 간편한 대안
+- 전통적인 함수표현의 간편한 대안이다.
 
 <br>
 
@@ -74,12 +74,12 @@ setInterval(function(){}, 1000);
 ## 배열의 forEach 메서드
 - 교재 321p
 - 대표적인 callback function
-- 배열의 요소를 순차적으로 검색하여 그 값을 함수의 인수로 넘기기를 반복
+- 배열의 요소를 순차적으로 검색하여 그 값을 함수의 인수로 넘기기를 반복한다.
 ```jsx
 var a = [5,4,3];
 a.forEach(function(val) { console.log(val); });
 ```
-- 이터레이션 (iteration) : 반복 처리, 데이터 안의 요소를 연속적으로 꺼내는 행위
+- 이터레이션 (iteration) : 반복 처리, 데이터 안의 요소를 연속적으로 꺼내는 행위이다.
 ---
 
 ## 객체 (Object)
