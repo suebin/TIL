@@ -41,8 +41,6 @@ var square = x => x*x;
 ```
 
 
----
-
 ## 콜백 함수 (Callback Function)
 
 - 교재 315p ~ 316p
