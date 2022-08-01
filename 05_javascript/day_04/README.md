@@ -40,7 +40,7 @@ var square = function(x) {return x*x; };
 var square = x => x*x;
 ```
 
-- 
+
 ---
 
 ## 콜백 함수 (Callback Function)
@@ -130,5 +130,3 @@ a.forEach(function(val) { console.log(val); });
 - [Window 객체](./test/window)
 - [Navigator, History, Location 객체](./test/navigator_history_location.html)
 - [Navigator 객체의 프로퍼티인 geolocation을 이용한 위치추적](./test/geolocation.html)
-
-<br>
