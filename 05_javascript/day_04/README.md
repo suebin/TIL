@@ -60,8 +60,9 @@ setInterval(function(){}, 1000);
 ```
 <br>
 
-## 화살표 함수
+## 화살표 함수 (Arrow Function Expression)
 - 교재 317p ~ 318p
+- 전통적인 함수표현의 간편한 대안
 
 <br>
 
