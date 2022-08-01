@@ -10,7 +10,6 @@ import view.MemberSelectView3;
 import view.MemberUpdateView;
 
 public class MemberMain {
-
 	public static void main(String[] args) {
 		while(true) {
 			System.out.println("=== 회원 관리 프로그램을 시작합니다. ===");

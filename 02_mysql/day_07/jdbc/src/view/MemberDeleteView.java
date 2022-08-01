@@ -25,5 +25,4 @@ public class MemberDeleteView implements View {
 			System.out.println("암호가 다릅니다. ");
 		}
 	}
-
 }
