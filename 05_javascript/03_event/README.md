@@ -95,7 +95,7 @@ function changeColor(e) {
 
 ---
 
-## 이벤트 전파 (Event Bubbling)
+## 이벤트 전파 
 
 어떤 요소에서 발생한 이벤트는 부모 혹은 자식에게 전파하는데, 
 
