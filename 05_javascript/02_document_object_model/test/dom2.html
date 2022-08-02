@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>dom2</title>
+</head>
+<body>
+	<!-- <form> : 1. 입력 양식을 제공한다. 2. 다른 서버로 파일을 전송한다. -->
+	<form action="a.jsp">
+		<input type=checkbox name="hobby" value="music"> 음악감상<br>
+		<input type=checkbox name="hobby" value="movie"> 영화<br> <input
+			type=checkbox name="hobby" value="cook"> 요리<br> <input
+			type=checkbox name="hobby" value="study"> 공부<br> <input
+			type=radio name="time" value="12"> 12시<br> <input
+			type=radio name="time" value="15"> 오후 3시<br> <input
+			type=radio name="time" value="16"> 오후 4시<br> <input
+			type=radio name="time" value="18"> 오후 6시<br> <input
+			type=submit value="전송">
+	</form>
+
+	<script>
+		// 4. name 속성 값으로 노드 가져오기 (523p) : name=hobby인 태그의 value 읽기
+		var hobby_array = document.getElementsByName("hobby"); // 배열로 가져온다.
+		for (var i = 0; i < hobby_array.length; i++) {
+			document.write(hobby_array[i].value + " ");
+		}
+
+		// 5. CSS 선택자로 노드 가져오기 (525p) 
+		// input type=submit인 value 출력
+		var submit = document.querySelector("input[type=submit]");
+		document.write(submit.value); // 전송
+
+		// input checkbox 마지막 value 출력
+		// 선택자의 조건에 맞는 태그가 여러개 해당이 되면 첫번째 태그 한 개 가져온다.
+		// last-child, nth-child(4) 등을 사용한다.
+		// var checkbox = document.querySelector("input[type=checkbox]:last-child"); -> 안 나온다. 왜? <form> 자식 태그 밑에는 <br>도 다 자식 태그에 포함되기 때문이다.
+		var checkbox = document
+				.querySelector("input[type=checkbox]:nth-child(7)");
+		document.write(checkbox.value); // study
+
+		// selectAll을 사용해 input 태그의 type=checkbox인 value의 값을 모두 구하기
+		var checkbox_array = document.querySelectorAll("input[type=checkbox]");
+		for (var i = 0; i < checkbox_array.length; i++) {
+			document.write(checkbox_array[i].value + "<br>");
+		}
+
+		// document.querySelector("#a") : id=a 태그
+		// document.querySelectorAll(".a") : class=a 태그
+
+		// 1. 속성 값의 읽기와 쓰기 (528 ~ 533p)
+		// value 값 수정
+		checkbox_array[0].value = "음악감상";
+		// value 값 수정 결과 확인
+		document.write(checkbox_array[0].value + "<br>"); // 음악감상
+		// value 값 있다면 삭제
+		if (checkbox_array[0].hasAttribute("value")) {
+			checkbox_array[0].removeAttribute("value");
+		}
+		// value 값 삭제 확인
+		document.write(checkbox_array[0].hasAttribute("value") + "<br>"); // false
+	</script>
+
+	<!------------------------------->
+
+	<h1>제목</h1>
+	<div>div 태그</div>
+	<img src="a.jpg">
+	<input type=text>
+
+	<script>
+		// 2. HTML 요소의 내용을 읽고 쓰기 : 534p ~ 537p 
+
+		// 수정 (태그 포함)
+		//document.querySelector("h1").innerHTML = "변경 제목";
+		//document.querySelector("div").innerHTML = "<h3>변경 div 태그</h3>";
+
+		// 수정 (태그 미포함 : 태그 문자열 취급)
+		//document.querySelector("h1").textContent = "변경 제목";
+		//document.querySelector("div").textContent = "<h3>변경 div 태그</h3>";
+
+		// 3. 노드 생성/삽입/삭제하기 (538p ~ 547p)
+
+		// 태그 생성, 문서 추가 후 출력 (사실상 document.querySelector("div").innerHTML = "<h3>변경 div 태그</h3>"; 와 같다.)
+
+		// 3-1. 노드 생성하기 (538p)
+		var h3 = document.createElement("h3"); // <h3></h3> 생성
+		var h3_text = document.createTextNode("변경 div 태그");
+		h3.appendChild(h3_text); // <h3>변경 div 태그</h3>
+
+		document.querySelector("div").innerHTML = ""; // 이전의 내용 초기화
+
+		// 3-2. 노드 삽입하기 (539p)
+		document.querySelector("div").appendChild(h3); // 기존 내용 + <div><h3>변경된 div 태그</h3></div>
+
+		// 3-2-1. 노드 옮기기 (542p) : appendChild는 이미 존재하는 태그에 사용하면 이동 효과를 준다.
+		document.querySelector('body')
+				.appendChild(document.querySelector("h1"));
+		//document.querySelector("div").insertBefore(h3, 자식태그들앞);
+
+		// 3-3. 노드 삭제하기 (546p): input 태그 삭제
+		//document.querySelector('body').removeChild(document.querySelector("img"))
+
+		// 3-4. 노드 치환하기 (547p)
+		document.querySelector('body').replaceChild(
+				document.querySelector("h1"), document.querySelector("img"));
+
+		// DOM에서 CSS 제어하기
+		var h1 = document.querySelector("h1");
+		h1.style.color = "red";
+		h1.style.width = 500;
+		h1.style.backgroundColor = "pink";
+		h1.style.borderColor = "green";
+		h1.style.borderWidth = "2px";
+		h1.style.borderStyle = "solid";
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>쇼핑목록</title>
+</head>
+<body>
+	<h1>쇼핑 목록</h1>
+	<p id="mart">마트에서 사야할 목록</p>
+	<ul id="buy" class="list">
+		<li>두부</li>
+		<li>계란</li>
+		<li>라면</li>
+	</ul>
+	<p id="mart">마트에서 사야할 목록2</p>
+	<p id="mart">마트에서 사야할 목록3</p>
+
+	<!-- 태그를 읽어오는 다양한 방법 -->
+	<!-- 노드 객체 가져오기 : 518 ~ 522p -->
+	<script>
+		// Text Node 값 읽기
+		// document.write(p.innerHTML);
+
+		// 1. id 속성으로 노드 가져오기 (518p) : p 태그 읽기
+		var p = document.getElementById("mart"); //  id값이 일치하는 태그 하나만 가져 온다.
+		var p_array = document.getElementsByTagName("p"); // p 태그는 전부 다 읽으므로 "배열"로 가져온다.
+		document.write(p_array.length); // 3 (p 태그의 개수)
+		document.write(p_array[2].innerHTML); // 마트에서 사야할 목록3 (만약 배열 다 읽고 싶다면 반복문 사용)
+
+		// 2. class 속성 값으로 노드 가져오기 (521p) : class="list" 속성 읽기
+		var ul_array = document.getElementsByClassName("list"); // 배열로 가져온다.
+		document.write(ul_array.length); // 1
+		document.write(ul_array[0].innerHTML) // <ul></ul> 전체 정보가 ul_array[0]에 저장 (두부,계란,라면 다 나온다.)
+
+		// 3. 요소의 이름으로 노드 가져오기 (519p) : 두부만 읽기 1
+		var li_array = document.getElementsByTagName("li");
+		document.write(li_array[0].innerHTML);
+
+		// 노드 객체의 프로퍼티 (514 ~ 516p)
+		// 두부만 읽기 2 : 노드 객체의 프로퍼티(부모-자식)로 읽어올 수도 있지만 많은 작업이 필요해 불편하다. 방법 1로 사용하자 !
+		var ul = document.getElementById("buy");
+		var ul_child_array = ul.childNodes;
+		document.write(ul_child_array.length); // 7 : li 3개 + 두부/계란/라면 3개 + 마지막 라면 쓰고 줄바꿈(엔터) 1개
+
+		for (var i = 0; i < ul_child_array.length; i++) {
+			if (ul_child_array[0].nodeType == 1) {
+				document.write(ul_child_array[i].innerHTML);
+			}
+		}
+	</script>
+
+</body>
+</html>
