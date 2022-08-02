@@ -9,7 +9,7 @@
     - [Navigator 객체](#navigator-객체)
     - [Location 객체](#location-객체)
     - [History 객체](#history-객체)
-    
+
 <br>
 
 ---
@@ -32,7 +32,6 @@
 <br>
 
 ---
-
 ## 웹 브라우저의 객체
 
 - 교재 13장
