@@ -13,7 +13,7 @@
 <br>
 
 :milky_way: **예제**
-- [객체를 생성하는 두가지 방법](./test/object_all.html)
+- [객체를 생성하는 두 가지 방법](./test/object_all.html)
 
 <br>
 
