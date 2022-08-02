@@ -1,8 +1,3 @@
-# 함수 (Function)
-
-
-<br>
-
 :milky_way: **지난 시간 예제**
 - [이벤트 처리와 DOM 구조를 이용한 예제](./test/boardlist_object.html)
 
@@ -10,7 +5,7 @@
 
 ---
 
-# 함수
+# 함수 (Function)
 
 - 교재 8장 (255p ~ 264p)
 
