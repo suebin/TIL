@@ -1,0 +1,78 @@
+<!-- 키보드 이벤트 객체 keydown 예제 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>keyboard event : keydown</title>
+</head>
+<body>
+
+<!-- 
+input 태그 => id 속성 : css style 처리, 현재 id 속성 태그 위치로 이동, DOM 처리 name 속성 : form action 파일 전송할 때 변수명 !  
+-->
+
+<script>
+
+// keyCode : 0-48, 9-57 : 숫자 범위, 65-90 : 알파벳 범위
+window.addEventListener('load', function(){
+	
+	// var count = 0; - 2번
+	document.querySelector("#phone").addEventListener('keydown', function(e){
+		
+		
+		/* 1. 핸드폰 번호를 입력받을 때 숫자면 적합, 알파벳이면 부적합을 띄우기 
+		if(e.keyCode >= 48 && e.keyCode <= 57) {
+			document.querySelector("#output").innerHTML = e.key + " = 적합 " ;
+			document.querySelector("#output").style.color = "green";
+		}
+		else {
+			document.querySelector("#output").innerHTML = e.key + " = 부적합 " ;
+			document.querySelector("#output").style.color = "red";
+		}
+		*/
+		
+		
+		
+		/* 2. 010으로 시작하고 숫자 개수가 11개일 때 green, 아니면 "올바른 형식이 아닙니다" 띄우기
+		count++;
+		
+		if (count == 11 && document.querySelector("#phone").value.indexOf("010") == 0) {
+			document.querySelector("#output").innerHTML = document.querySelector("#phone").value;
+			document.querySelector("#output").style.color = "green";
+		}
+		else {
+			document.querySelector("#output").innerHTML = "올바른 형식이 아닙니다.";
+			document.querySelector("#output").style.color = "red";
+		}
+		*/
+	
+		
+		// 3. regex와 매치되면 alert ! : java + java script + html (정규표현식 : 452p 참고)
+		var regex = /^010[0-9]{3,4}[0-9]{4}$/; 
+		// var phone = document.querySelector("#phone").value;
+		// var phone = e.target.value;
+		   var phone = this.value;
+		if (phone.match(regex) != null) {
+			alert(phone.match(regex)); // phone 변수가 regex와 매치되면 그대로 리턴, 아니면 null 리턴
+		}
+		
+		}, false);
+}, false);
+
+// e.keyCode, e.key 를 사용했다.
+// 그 밖에도 e.type, 
+
+</script>
+
+<form action="a.jsp">
+핸드폰 번호 입력 : 
+
+<!-- <input type=text id="phone" name="phone" pattern="010[0-9]{3,4}[0-9]{4}"> -->
+<!-- 패턴으로 해도 된다. 하지만 submit을 하면 그때서야 올바른지 검사한다. 하지만 위의 키보드 이벤트 객체를 이용하면 누름과 동시에 바로 올바른지 알려준다. -->
+<input type=text id="phone" name="phone">
+<input type=submit value="전송">
+<div id="output">여기에서 입력한 내용을 확인할 수 있습니다.</div>
+</form>
+</body>
+</html>

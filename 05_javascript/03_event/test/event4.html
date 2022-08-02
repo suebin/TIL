@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 이벤트:submit & 이벤트 전파</title>
+</head>
+<body>
+	<form id="loginform" action="server.jsp">
+		아이디 : <input type=text id="id" name="id" required><br> 비밀번호 : <input
+			type=password id="pw1" name="pw"><br> 비밀번호 확인 : <input
+			type=password id="pw2" name="pw"><br> <input type=submit
+			value="로그인">
+	</form>
+
+	<script>
+		document.querySelector("#loginform").addEventListener('submit',
+				function(e) {
+					/*	이렇게 하지 않아도 input 태그 안에 "required" 작성하면 필수 입력 툴팁창이 나온다.
+					if(document.querySelector("#id").value == ''){
+							alert("아이디 필수 입력 !");
+							e.preventDefault();
+						}
+					 */
+					if (document.querySelector("#pw1").value == document
+							.querySelector("#pw2").value) {
+						alert("submit 가능");
+					} // if end
+					else {
+						alert("submit 불가능");
+						e.preventDefault();
+						// = e.target.action="";
+						// = this.action="";
+					}
+				}, // function end
+				false);
+		// true -> 부모 이벤트를 자식으로 전파
+		// false (기본값) -> 자식 이벤트를 부모로 전파
+	</script>
+</body>
+</html>

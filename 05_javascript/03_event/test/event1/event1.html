@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 이벤트 처리할 것이 하나만 있다면 DOM 처리 o, 여러개라면 ? 이벤트 리스너 ! -->
+<!-- 이벤트 리스너 -->
+
+<script src="event1.js"></script>
+
+<script>
+	function test() {
+		alert(1);
+	}
+	function test2() {
+		alert(2);
+	}
+	function test4() {
+		// 함수 삭제
+		document.querySelector("#click").removeEventListener('click', test, false);
+		document.querySelector("#click").removeEventListener('click', test2, false);
+		document.querySelector("#click").removeEventListener('click', test3, false);
+	}
+	function start() {
+		document.querySelector("#click").addEventListener('click', test, false);
+		document.querySelector("#click").addEventListener('click', test2, false);
+		document.querySelector("#click").addEventListener('click', test3, false);
+		document.querySelector("#noclick").addEventListener('click', test4, false);
+	}
+	window.addEventListener('load', start, false);
+</script>
+</head>
+
+<body>
+	<input type=button value="클릭" id="click">
+	<input type=button value="alert가 사라진다!" id="noclick"> 
+</body>
+
+</html>
