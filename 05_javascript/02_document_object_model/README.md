@@ -75,19 +75,19 @@ document.querySelector("선택자");
 요소 객체.getAttribute(속성의 이름)
 ```
 
-1. 속성 값 설정하기
+2. 속성 값 설정하기
 
 ```jsx
 요소 객체.setAttribute(속성 이름, 속성 값)
 ```
 
-1. 속성이 있는지 확인하기
+3. 속성이 있는지 확인하기
 
 ```jsx
 요소 객체.hasAttribute(속성 이름)
 ```
 
-1. 속성 삭제하기
+4. 속성 삭제하기
 
 ```jsx
 요소 객체.removeAttribute(속성 이름)
@@ -99,12 +99,12 @@ document.querySelector("선택자");
 
 :bulb:
 
-**개발자 도구 ** **“ Elements "**  
+#### 개발자 도구 “ Elements "  
 
 변화 내용을 동적으로 반영 
 (이벤트 처리할 때 잘 반영이 되었는지 확인 가능)
 
-↔ 페이지 소스 보기 : 정적
+<-> 페이지 소스 보기 : 정적
 
 ---
 
@@ -142,7 +142,7 @@ var element = document.createElement(요소의 이름);
 var textnode = document.createTextNode(텍스트); 
 ```
 
-1. 노드 삽입하기 (노드 옮기기도 가능)
+2. 노드 삽입하기 (노드 옮기기도 가능)
 
 ```jsx
 // 요소 마지막에 삽입
@@ -152,14 +152,14 @@ var textnode = document.createTextNode(텍스트);
 요소 노드.insertBefore(삽입할 노드, 자식 노드)
 ```
 
-1. 노드 삭제하기
+3. 노드 삭제하기
 
 ```jsx
 // 노드의 자식 노드를 삭제
 노드.removeChild(자식 노드)
 ```
 
-1. 노드 치환하기
+4. 노드 치환하기
 
 ```jsx
 // 인수로 받은 자식 노드 제거, 새로운 노드 치환
