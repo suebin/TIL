@@ -1,18 +1,6 @@
 # 웹 브라우저의 객체 (BOM)
-<br>
-
-:milky_way:  **목차** <br>
-
-- [객체](#객체-object)
-- [웹 브라우저의 객체](#웹-브라우저의-객체)
-    - [Window 객체](#window-객체)
-    - [Navigator 객체](#navigator-객체)
-    - [Location 객체](#location-객체)
-    - [History 객체](#history-객체)
 
 <br>
-
----
 
 ## 객체 (Object)
 
