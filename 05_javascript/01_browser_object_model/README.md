@@ -1,4 +1,4 @@
-# 웹 브라우저의 객체 (BOM : Browser Object Model)
+# 웹 브라우저의 객체 (BOM)
 <br>
 
 :milky_way:  **목차** <br>
@@ -32,7 +32,7 @@
 <br>
 
 ---
-## 웹 브라우저의 객체
+## 웹 브라우저의 객체 (Browser Object Model)
 
 - 교재 13장
 
