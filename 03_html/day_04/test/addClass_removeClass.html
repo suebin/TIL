@@ -1,0 +1,50 @@
+<!-- 4. 클래스 조작 (383~384p) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){
+	// 1. 클래스 추가
+	$("h1, h3").addClass("a");
+	$("h1").addClass("box");
+	
+	// 2. 클래스 제거
+	$("h1").removeClass("a");
+	
+	
+	/*
+	css()와 addClass()
+	
+	css()는 하나의 속성 제어
+	addClass()는 여러 개 한꺼번에 제어
+	
+	*/
+});
+</script>
+
+<style>
+.a {
+	color:red;
+	background-color:green;
+}
+
+.box {
+	width:200px;
+	height:200px;
+	border:2px solid navy;
+}
+</style>
+
+</head>
+
+<body>
+<h1> 클래스 속성을 제어합니다 ~</h1>
+<h2> addClass 메서드를 공부합니다 ~</h2>
+<h3> removeClass 메서드도 공부합니다 ~</h3>
+</body>
+
+</html>
