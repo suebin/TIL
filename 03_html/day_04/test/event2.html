@@ -1,0 +1,79 @@
+<!-- 복합 이벤트 연결 (387p) -->
+<!-- 기본 이벤트 제거 (391p) -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){
+	$("div#box").css({
+		width : "500px", // 객체 형태는 콤마(,)로 연결
+		height : "500px",
+		backgroundColor : "black" // 객체라서 하이픈(-) 없애고 c를 대문자로 바꾼다.
+	});
+	
+	// 한 태그에 세 가지 이벤트를 연결해보기 : mouseenter, mouseleave, click
+	
+	/* 
+	$("div#box").on('click', function() {
+		$(this).css("background-color", "yellow");
+	});
+	
+	$("div#box").on('mouseenter', function() {
+		$(this).css("background-color", "orange");
+	});
+	
+	$("div#box").on('mouseleave', function() {
+		$(this).css("background-color", "tomato");
+	});
+	*/
+	
+	// 위 코드와 동일하지만 더 간단하게 만들어보자 ! (+ 이벤트 타입 정보)
+	$("div#box").on(
+		{
+			click:function(e) { // e : 이벤트 매개변수
+				$(this).html(e.type); // 이벤트 타입 정보 확인
+				$(this).css("background-color", "yellow");
+			} ,	
+			mouseenter:function(e) {
+				$(this).html(e.type);
+				$(this).css("background-color", "orange");
+			} ,
+			mouseleave:function(e) {
+				$(this).html(e.type);
+				$(this).css("background-color", "tomato");
+			}
+		}
+	);
+	
+	// 기본 이벤트 제거 : preventDefault();
+	$("a").on('click', function(e){
+		e.preventDefault();
+		$("div#box").html("클릭해도 아무 소용이 없습니다 ~");
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+<a href="login.jsp"> 로그인 페이지로 이동 ! </a>
+
+<!--
+preventDefault() : 기본 이벤트 제거를 활용한 유효성 검사 (392~394p)
+
+아이디 값이 필요한데
+만약에 넘길 아이디가 없다면 ?
+
+에러가 나지 않도록
+기본 이벤트를 제거하고,
+아이디를 입력해달라는 메세지를 보여준다.
+-->
+
+
+</body>
+
+</html>
