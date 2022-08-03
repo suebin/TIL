@@ -5,7 +5,6 @@
 :milky_way: **책 범위**
 - chapter 11
 
-
 ---
 
 ## jQuery 사용 목적
