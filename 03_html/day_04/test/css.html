@@ -1,0 +1,36 @@
+<!-- 2. 스타일 조작 (378~380p) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){ // 콜백 함수
+	//$("div").css("color", "red");
+	$("div").css("color", function(index) {
+		// if(index == 0) { return "red"; }
+		// else if (index == 1) { return "green"; }
+		// else if (index == 2) { return "blue"; }
+		// else { return 'pink'; }
+		
+		// 배열에 나열하고 싶은 색상표 !
+		var array = ['red', 'pink', 'yellow', 'green', 'blue', 'aqua', 'black'];
+		return array[index%7];
+	});
+});
+</script>
+</head>
+
+<body>
+<div>1번째</div>
+<div>2번째</div>
+<div>3번째</div>
+<div>4번째</div>
+<div>5번째</div>
+<div>6번째</div>
+<div>7번째</div>
+</body>
+
+</html>
