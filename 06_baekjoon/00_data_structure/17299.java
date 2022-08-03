@@ -35,7 +35,7 @@ public class Main {
 			stack.push(i);
 		}
 		
-		// 오등큰수가 없는 원소는 -1로 바꾸어주기
+		// 오등큰수가 없는 원소는 -1로 바꾸기
 		while (!stack.isEmpty()) {
 			nums[stack.pop()] = -1;
 		}
