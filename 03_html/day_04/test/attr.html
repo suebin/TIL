@@ -1,0 +1,88 @@
+<!-- 1. 속성 조작 (373~377p) -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 조작 : attr()</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+// 모든 값은 String으로!
+
+$(document).ready(function(){
+	
+	/* 1. 속성 지정 : setter */
+	
+	$("img:first").attr("src", "./drinks.jpg"); 
+	$("img:first").attr("alt", "쥬스 사진입니다 ~");
+	$("img").attr("width", "300");
+	$("img").attr("height", "300");
+	
+	// 속성 지정은 여러 개도 가능하다. (하나의 객체로 !)
+	$("img:last").attr({ 
+		src : "./drinks.jpg",
+		alt : "쥬스 사진입니다 ~~",
+		width : "200",
+		height : "200"
+	});
+	
+	
+	
+	/* 2. 속성 추출 : getter */
+	
+	// 첫번째 이미지 url
+	alert($("img:first").attr("src"));
+	// 이미지 복사
+	$("img:last").attr("src", $("img:first").attr("src"));
+	
+	
+	/*
+	$("img").attr("src") : 모든 이미지의 src 가져오려고 했으나, 실제로는 이미지 한 개만 가져온다.
+	getter : 선택자가 여러 개를 선택하면 첫번째 태그만 가져온다.
+	
+	모든 이미지의 src를 가져오고 싶다면 어떻게 해야 할까?
+	아래 두 가지 방법이 있다.
+	*/
+	
+	// 방법 1 (반복문)
+	for (var i = 0; i < $("img").length; i++) {
+		alert($("img:eq("+i+")").attr("src"));	
+	}
+	
+	// 방법 2 (jQuery 반복문 내장 함수 : each)
+	$("img").each(function(i) {
+		alert($("img:eq("+i+")").attr("src")); 
+	})
+	
+	// 방법 2-1 
+		$("img").each(function(i) { 
+		// alert(this.jQuery함수) X 
+		// this는 자바스크립트 객체 O, jQuery 객체 X
+		alert(this.src); // full 주소 가져온다.
+	})
+	
+	// 방법 2-2
+		$("img").each(function(i) { 
+		// $(this) : jQuery 객체로 변환 !
+		alert($(this).attr("src")); // 입력한 주소 가져온다.
+	})
+	
+	
+	/* 3. 속성 삭제 */
+	
+	// 이미지 src 속성 삭제
+	$("img").removeAttr("src"); // 삭제할 때에는 반복문 없이 한 번에 모두 삭제 가능
+	
+	
+	
+}); // ready end
+
+
+</script>
+</head>
+
+<body>
+<img>
+<img>
+</body>
+
+</html>
