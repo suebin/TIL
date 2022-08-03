@@ -94,5 +94,4 @@ ex) `inline`, `block`, `flexbox`,`%`, `px`, `green` 등이 있다.
 - 상대 위치 좌표 : `relative`, `static`
 
 ## 6. 유동 속성
-
-`float`
+- `float`
