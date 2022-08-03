@@ -5,8 +5,6 @@
 :milky_way: **책 범위**
 - chapter 11
 
-<br>
-
 
 ---
 
@@ -18,6 +16,7 @@
 - 쉬운 Ajax 응용 프로그램 개발
 
 결론 = 쉽다 !
+
 <br>
 
 ```jsx
@@ -36,14 +35,14 @@ $(document).ready(function() {
 2. HTML 파일에 jQuery 태그 미리 정의
     - `Window` - `Preferences` - `Web` - `HTML files` - `Editor` - `Templates`
     
-    ![edit template](./edit%20template.png)
+    ![edit template](./edit_template.png)
     
 
 ---
 
 ## 문서 객체 선택
 
-### jQuery 라이브러리 메서드의 기본 형태
+#### jQuery 라이브러리 메서드의 기본 형태
 
 ```jsx
 $(selector).메서드(매개변수, 매개변수);
@@ -56,14 +55,14 @@ $(selector).메서드(매개변수, 매개변수);
 
 ## 문서 객체 조작
 
-1. 속성 조작  
+#### 1. 속성 조작  
     - `attr ()` : 문서 객체의 속성 조작
-2. 스타일 조작 
+#### 2. 스타일 조작 
     - `css()`
-3. 글자 조작 
+#### 3. 글자 조작 
     - `html()` : 문서 객체 내부의 HTML 태그 조작
     - `text()` : 문서 객체 내부의 글자 조작
-4. 클래스 조작
+#### 4. 클래스 조작
     - `addClass()` : 클래스 추가
     - `removeClass()` : 클래스 제거
     - `toggleClass()` : 클래스 전환 (클래스 있으면 제거, 없으면 추가)
