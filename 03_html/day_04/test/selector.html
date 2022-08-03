@@ -1,0 +1,186 @@
+<!-- 문서 객체 선택 (371~372p) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+	// jQuery는 jQuery, js 둘 다 O
+	$(document).ready(function() {
+		
+		/* id=a 인 태그를 가져오기
+		
+		1.DOM 객체 사용
+			document.getElementById("a");
+			document.querySelector("#a");
+		
+		2. jQuery 사용 
+		 	$("#a") 
+		
+			jQuery가 훨씬 간단하다.
+			jQuery의 selector는 css selector와 유사하다.
+		*/
+		
+		
+		/*
+		document.querySelector("h1").style.color = "red"; 
+		
+		위의 코드는 h1 하나만 선택해서 색상을 바꾸어준다. 
+		All을 붙이면 전체를 선택해주지만 인덱스를 또 지정해주어야 한다.
+		하지만 jQuery는 간단하다.
+		DOM 객체와 다르게 조건에 맞으면 모두 다 가져온다.
+		*/
+		$("h1").css("color", "red"); 
+		
+		
+		
+		// 태그의 포함관계
+		$("h1 a").css("color", "red"); // h1의 아래에 있는 a 태그 (바로 아래가 아니어도 O)
+		$("h1 > a").css("color", "red"); // h1 바로 아래에 a 태그
+		
+		// 두 개의 태그를 동시에 선택
+		$("h1, td").css("color", "red");
+		
+		// h1태그이면서 class="red"인 태그
+		$("h1.red").css("color", "red");
+		
+		// h1태그이면서 id="second"인 태그
+		$("h1#second").css("color", "red");
+		
+		// h1태그에 포함된 "id=second"인 태그
+		$("h1 #second").css("color", "red");
+		
+		// input 태그 중 type=text
+		$("input:text").css("color", "red");
+		$("input[type=text]").css("color", "red");
+		
+		// filtering
+		$('input[type^=te]').css("color", "red");  // ^=te: te라는 문자로 시작
+		$('input[type$=l]').css("color", "pink");  // $=l : l이라는 문자로 종료
+		$('input[type*=e]').css("color", "green"); // *=e : e라는 문자 포함
+		
+		// $('input:checked') // radio, checkbox
+		// $("select obtion[selected=selected]")
+		
+		
+		// th 태그
+		$("th").css("color", "red");
+		
+		// 첫번째 등장하는 th 태그 (jquery 추가)
+		$("th:first").css("color", "red");
+		
+		// th 태그를 포함하는 부모(tr)의 첫번째 태그인 th (css+jquery) : 만약 첫번째 태그가 th가 아니라면 가져올 수 x
+		$("th:first-child").css("color", "red");
+		
+		// 마지막 th 태그
+		$("th:last").css("color", "red");
+		
+		
+		// jquery 추가
+		// 인덱스가 짝수번째인 tr 태그  
+		$("tr:even").css("color", "red");
+		// 인덱스가 짝수번째인 tr 태그에 포함되어 있는 td 태그 : even tr의 인덱스 0,2,4,6 (따라서 사용자가 보기에는 홀수처럼 보일 수가 있다.)
+		$("tr:even td").css("color", "red");
+		// 인덱스가 홀수번째 tr 태그에 포함되어 있는 td 태그 : odd tr의 인덱스 1,3,5,7 (따라서 사용자가 보기에는 짝수처럼 보일 수가 있다.)
+		$("tr:odd td").css("color", "red");
+		
+		
+		// 3의 배수에 해당하는 tr 태그에 포함된 td 태그 
+		$("tr:nth-child(3n) td").css("color", "red"); // n=1, 3번째 줄을 의미한다.
+		
+		
+		// 인덱스가 3인 tr 태그에 포함된 td 태그 (사용자가 보기에는 네번째 tr)
+		$("tr:eq(3) td").css("color", "red");
+		// 인덱스가 3보다 큰 tr 태그에 포함된 td 태그
+		$("tr:gt(3) td").css("color", "pink");
+		// 인덱스가 3보다 작은 tr 태그에 포함된 td 태그
+		$("tr:lt(3) td").css("color", "green");
+		
+		
+		/*
+		지금까지는 속성을 설정하는 setter 용도의 사례를 보았다.
+		아래와 같은 형식으로 작성한다.
+		
+		$(selector).css("css이름", "값");
+		
+		
+		값을 가져오는 getter 용도로 사용할 수도 있다.
+		아래와 같은 형식으로 작성한다.
+		
+		$(selector).css("css이름");
+		*/
+		
+		// 인덱스가 3인 tr 태그에 포함된 td 태그의 색상을 가져오기 (getter)
+		alert($("tr:eq(3) td").css("color"));
+	});
+</script>
+</head>
+<body>
+	<h1 class="red">제목1</h1>
+	<h1 id="second">제목2</h1>
+	<h1><a href="a.html"> 링크1 </a></h1> <!--  a태그 기본 이벤트핸들러 내장(자동이동+글씨 파랑색 밑줄+배경색지정x)  -->
+	
+	<a class="red" href="b.html"> 링크2 </a><br>
+	<input type=text value="기본문자열"><br>
+	<input type=password value="기본암호"><br>
+	<input type=tel value="기본"><br>
+	<input type=url value="http://"><br>
+	<input type=email value="a@b.com"><br>
+	<input type=button value="버튼"><br>
+	<button>버튼2</button>
+	
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>내용</th>
+			<th>작성자</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>제목1</td>
+			<td>내용1</td>
+			<td>작성자1</td>
+		</tr>
+	</table>
+
+</body>
+</html>
