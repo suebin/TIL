@@ -48,8 +48,8 @@
 
 ## 공간 분할 태그
 
-- `div` : block level element
-- `span`  : inline level element
+- `div` : Block Level Element
+- `span`  : Inline Level Element
 
 ## 시멘틱 태그 (Semantic tag)
 ![시멘틱 태그](./semantic_tag.png)
