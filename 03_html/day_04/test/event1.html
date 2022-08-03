@@ -1,0 +1,46 @@
+<!-- 이벤트 연결과 사용 : on()과 off() (385~388p) --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){
+	$("h1#first").css("width", "300px");
+	$("h1#first").css("border", "5px solid green");
+	
+	// click 메서드
+	$("h1#first").click(test1);
+
+	
+	// on() : 이벤트 연결
+	$("h1#first").on('click', function(){
+		$("div#last").css("width", "500px");
+		$("div#last").css("border", "5px solid blue");
+		$("div#last").append("on 메서드 => "+ $("h1#first").text());
+	});
+	
+	
+	// off() : 이벤트 제거
+	$("input:button").on('click', function() {
+		// $("h1#first").off('click');  : 모든 함수(2개) 실행
+		$("h1#first").off('click', test1); // 만약 특정 함수의 이벤트를 제거하고 싶다면 함수를 따로 만들어 이름을 지정해주고, 제거한다.
+	})
+	
+	function test1(){
+		$("div#last").append("click 메서드 => "+ $("h1#first").text());
+	}
+	
+});
+</script>
+</head>
+<body>
+
+<!-- 모든 HTML 태그 클릭 가능 : 동작은 사용자 구현 (a, input, type=submit, type=reset 제외) -->
+<h1 id="first"> 클릭해 보세요 ~</h1>
+<input type=button value="이벤트 멈춥니다 ~">
+<div id="last"></div>
+</body>
+</html>
