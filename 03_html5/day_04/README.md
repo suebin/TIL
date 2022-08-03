@@ -35,7 +35,7 @@ $(document).ready(function() {
 2. HTML 파일에 jQuery 태그 미리 정의
     - `Window` - `Preferences` - `Web` - `HTML files` - `Editor` - `Templates`
     
-    ![edit template](./edit_template.png)
+    ![templates](./templates.png)
     
 
 ---
