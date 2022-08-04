@@ -3,7 +3,7 @@
 <br>
 
 :milky_way: **책 범위**
-- chapter 11
+- chapter 11 (HTML5 웹 프로그래밍 입문)
 
 ---
 
