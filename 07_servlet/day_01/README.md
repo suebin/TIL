@@ -1,8 +1,15 @@
 # 서블릿 (Servlet)
 
+<br>
+
+:milky_way: **책 범위**
 - 교재 5장, 6장 (자바 웹을 다루는 기술)
 
-## 서블릿(Servlet : Server Side Applet)이란 ?
+<br>
+
+---
+
+## 서블릿(Server Side Applet)이란 ?
 
 단순히 고정된 정보를 브라우저에 보여주는 용도는 웹 서버로도 충분하다. 하지만 쇼핑몰 화면에 실시간으로 변하는 상품의 할인 가격을 보여주려면 상품의 할인 가격을 데이터베이스에서 가져오는 기능이나 직접 계산하는 기능이 필요하다. 그런 기능을 서버 쪽에서 서블릿이 처리해주면 상품 할인 가격 표시처럼 웹 페이지에서 동적으로 변하는 정보를 효과적으로 다룰 수 있다.
 
@@ -24,7 +31,7 @@
 
 ## 서블릿 매핑
 
-1. `web.xml`
+#### 1. web.xml
 - 155~157p
 
 :milky_way: **예제**
@@ -32,7 +39,7 @@
 
 <br>
 
-2. `WebServlet 어노테이션`
+#### 2. WebServlet 어노테이션
 - 167~173p
 
 :milky_way: **예제**
@@ -44,7 +51,6 @@
 
 서블릿의 상속 클래스는 `HttpServlet`이다. 
 
-<br>
 
 HttpServlet  메서드 중 `doGet()` 은 보통 기본적으로 사용한다.
 
@@ -71,7 +77,6 @@ destroy()
 - `request.getParameterValues()` : 여러 개의 값
 - `request.getParameterNames()`
 
-<br>
 <br>
 
 #### 서블릿이 클라이언트에게 응답하기 : HttpServletResponse
