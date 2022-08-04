@@ -129,4 +129,4 @@ animate(function() {정의})
 <br>
 
 :milky_way: **예제**
-- [시각 효과]](./test/show_slide_fade.html)
+- [시각 효과](./test/show_slide_fade.html)
