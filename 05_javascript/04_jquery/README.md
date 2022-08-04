@@ -94,3 +94,39 @@ $(document).ready(function() {});
 :milky_way: **예제**
 - [이벤트 연결과 사용](./test/event1.html)
 - [복합 이벤트 연결과 기본 이벤트 제거](./test/event2.html)
+
+---
+
+## 시각 효과
+
+1. 시각 효과 메서드
+
+```jsx
+// 문서 객체가 작아지며 사라짐
+hide(속도)
+// 문서 객체가 커지며 표시
+show(속도)
+
+// 문서 객체가 흐려지며 사라짐
+fadeOut(속도)
+// 문서 객체가 선명해지며 표시
+fadeIn(속도)
+
+// 문서 객체가 슬라이드 효과와 함께 표시
+slideDown(속도)
+// 문서 객체가 슬라이드 효과와 함께 사라짐
+slideUp(속도)
+
+// 속도 문자열 : slow, normal, fast
+```
+
+2. 애니메이션 효과
+
+```jsx
+animate(function() {정의})
+```
+
+<br>
+
+:milky_way: **예제**
+- [시각 효과]](./test/show_slide_fade.html)
