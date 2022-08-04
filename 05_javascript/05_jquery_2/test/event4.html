@@ -1,0 +1,66 @@
+<!-- 문서 객체 생성과 추가 (+삭제) (419~422p) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){
+	var cnt = 0;
+	$("#btnclick").on('click', function() {
+		$("#keyout").html(++cnt + " 번 클릭했습니다. ");
+		
+	// 가장 많이 쓰는 append
+		$("#newbuttons").append // <div id="newbuttons"> 내부에서 뒷부분에 생긴다.
+		("<input type=button value='새로 생성한 버튼" + cnt +"' id='btnadd'>");
+	});
+	
+	
+	/*	
+	
+		$("#newbuttons").prepend // <div id="newbuttons"> 내부에서 앞부분에 생긴다.
+		("<input type=button value='새로 생성한 버튼" + cnt +"' id='btnadd'>");
+	});
+	
+		
+		$("#newbuttons").before // <div id="newbuttons"> 밖의 앞 쪽에 생긴다.
+		("<input type=button value='새로 생성한 버튼" + cnt +"' id='btnadd'>");
+	});
+	
+	
+	
+		$("#newbuttons").after // <div id="newbuttons"> 밖의 뒤쪽에 생긴다.
+		("<input type=button value='새로 생성한 버튼" + cnt +"' id='btnadd'>");
+	});
+	
+	*/
+	
+	// 실행하면서 생성된 "동적" 태그의 이벤트 처리 (= 최초에 DOM 파악 X)
+	// $("부모").on('click', 이벤트 처리 대상 ,function(){})
+	$("#newbuttons").on('click', "input:button", function(){
+		$("#keyout").html($(this).val());
+	})
+	
+	
+	$("#btnstop").on('click', function() {
+		// $("#newbuttons").html('');  = 기존의 추가 내용 삭제
+		// $("#newbuttons").empty();   = #newbuttons id태그 내부 자식들 삭제
+		// $("#newbuttons").remove();  = #newebuttons id태그도 포함해서 삭제
+		$("#btnclick").off('click');
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<input type=button value="클릭" id="btnclick">
+<input type=button value="중단" id="btnstop">
+<div id="newbuttons"></div> 
+<div id="keyout"></div>
+
+</body>
+
+</html>
