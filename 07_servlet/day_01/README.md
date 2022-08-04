@@ -64,6 +64,23 @@ destroy()
 - [서블릿의 생명주기 메서드](./test/LifeCycleServlet.java)
 
 ---
-## 서블릿으로 클라이언트의 요청을 받아 응답 처리하기
+## 클라이언트(웹 브라우저)의 요청에 응답하기
+
+#### 서블릿에서 클라이언트의 요청을 얻기 : HttpServletRequest 
+- `request.getParameter()` : 하나의 값
+- `request.getParameterValues()` : 여러 개의 값
+- `request.getParameterNames()`
+
+<br>
+<br>
+
+#### 서블릿이 클라이언트에게 응답하기 : HttpServletResponse
+1. `setContentType()`을 이용해 MIME-TYPE 지정
+2. 데이터를 출력할 `PrintWriter 객체` 생성
+3. 출력 데이터를 HTML 형식으로 만들기
+4. PrintWriter의 `print()`나 `println()`을 이용해 데이터 출력
+
+<br>
+
 :milky_way: **예제**
-- [서블릿으로 사용자 요청을 받아와서 서버 출력으로 응답하기](./test/register)
+- [클라이언트의 요청에 응답하기](./test/register)
