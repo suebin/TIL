@@ -1,0 +1,41 @@
+<!-- 시각 효과 (395~403p)-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src=js/jquery-3.6.0.min.js></script>
+<script>
+$(document).ready(function(){
+	$("h1:eq(0)").hide();
+	setTimeout(function() {$("h1:eq(0)").show();}, 2000);
+	$("h1:eq(1)").fadeIn(3000); // 3초동안 천천히 보여라
+	$("h1:eq(1)").fadeOut(3000); // 3초동안 천천히 사랒져라
+	$("h1:eq(2)").slideDown(3000);
+	$("h1:eq(2)").slideUp('slow');
+	
+	$("h1:eq(3)").css({
+		width : "500px",
+		backgroundColor : "green"
+	});
+	
+    $("h1:eq(3)")..delay(2000); // 2초 중지
+
+	$("h1:eq(3)").animate({
+		width : "1000px",
+		backgroundColor : "blue" // jquery-ui 라이브러리 설치해야 배경색도 바뀐다.
+	}, 5000); // 5초 동안에 크기 1000px, 색상 파란색 변경
+	
+	
+});
+</script>
+</head>
+<body>
+	<h1>태그 보이기/감추기</h1>
+	<h1>태그 페이드인/아웃하기</h1>
+	<h1>태그 슬라이드하기</h1>
+	<h1>태그 애니메이션하기</h1>
+
+</body>
+</html>
