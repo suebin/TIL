@@ -1,4 +1,4 @@
-// 1. webServlet 어노테이션으로 url 매핑하기
+// webServlet 어노테이션으로 url 매핑하기
 
 import java.io.IOException;
 import javax.servlet.ServletException;

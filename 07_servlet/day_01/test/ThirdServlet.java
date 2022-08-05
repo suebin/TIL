@@ -1,4 +1,4 @@
-// 2. web.xml로 url 매핑하기
+// web.xml로 url 매핑하기
 
 import java.io.IOException;
 import javax.servlet.ServletException;
