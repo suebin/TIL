@@ -1,5 +1,7 @@
 # DataSource 이용해 데이터베이스 연동하기
-- 교재 7장 (239p~)
+- 교재 7장
+
+<br>
 
 ## 커넥션풀 (ConnectionPool)
 
