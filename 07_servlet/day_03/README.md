@@ -1,5 +1,6 @@
 :milky_way: **목차**
 - [DataSource 이용해 데이터베이스 연동하기](#datasource-이용해-데이터베이스-연동하기)
+- [서블릿을 이용한 회원 CRUD 기능 구현](#서블릿을-이용한-회원-crud-기능-구현) 
 - [포워드(dispatch)와 바인딩](#포워드dispatch와-바인딩)
 - [세션](#세션)
 
@@ -12,7 +13,6 @@
 :milky_way: **책 범위**
 - 7장
 
-<br>
 
 ## 커넥션풀 (ConnectionPool)
 
@@ -24,11 +24,13 @@
 
 커넥션풀은 기존 DB 연결 방식의 문제점을 해결해준다.
 
+<br>
+<br>
 
-### 기존 DB 연결 방법의 문제점
+#### 기존 DB 연결 방법의 문제점
 DB 연결에 시간이 많이 걸린다. 웹 서버 1개는 여러 클라이언트의 요청을 받아 멀티 스레드로 동작한다. DB 마다 최대 외부 접속 허용 개수는 한정되어 있다. 많은 사람들이 접속하면 웹 서버가 느려지거나 문제가 생길 수 있다.
 
-### connection pooling
+#### connection pooling
 
 웹 애플리케이션에서 ConnectionPool 객체를 구현할 때는 tomcat container가 자체적으로 제공하는 API 라이브러리로 사용한다.
 
@@ -48,10 +50,6 @@ DB 연결에 시간이 많이 걸린다. 웹 서버 1개는 여러 클라이언�
 
 ## 톰캣의 DataSource 설정 및 사용방법
 
-- 242~247p
-
-<br>
-
 1. JDBC 드라이버를 `/WEB-INF/lib 폴더`에 설치 (mysql connectorJ)
 
 2. context.xml에 Connection 객체 생성 시 연결할 데이터베이스 정보를 JNDI로 설정
@@ -63,11 +61,11 @@ DB 연결에 시간이 많이 걸린다. 웹 서버 1개는 여러 클라이언�
 <br>
 
 :milky_way: **예제**
-- [DataSource : 커넥션풀](./test/ConnectionServlet.java)
+- [DataSource](./test/ConnectionServlet.java)
 
 ---
 
-# 서블릿을 이용한 회원 CRUD 기능 구현 
+## 서블릿을 이용한 회원 CRUD 기능 구현 
 
 :milky_way: **지금까지 배운 내용을 합친 종합 예제**
 - [회원 CRUD 기능 구현하기](./test/member_CRUD)
@@ -79,8 +77,6 @@ DB 연결에 시간이 많이 걸린다. 웹 서버 1개는 여러 클라이언�
 
 :milky_way: **책 범위**
 - 8장
-
-<br>
 
 ## 포워드 (Forward)
 
@@ -118,7 +114,7 @@ ds.forward(request, response);
 
 <br>
 
-`dispatch`는 " **현재 서버의 현재 컨텍스트 내부 파일로만 이동** " 가능하다.
+`dispatch`는 " **현재 서버의 현재 컨텍스트 내부 파일로만 이동** " 만 가능하다.
 
 즉, 보안성이 우수하고 안전하다.
 
@@ -160,7 +156,6 @@ removeAttributte(String name)
 
 :milky_way: **책 범위**
 - 9장
-<br>
 
 ## 세션 (Session)
 웹 페이지들 사이의 공유 정보를 서버의 메모리에 저장해놓고 사용하는 방법이다.
