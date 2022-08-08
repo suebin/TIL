@@ -100,5 +100,17 @@ dispatch는 “ 현재 서버의 현재 컨텍스트 내부 파일로만 이동 
 - [포워드(dispatch)](./test/forward)
 
 ---
+# 회원 CRUD 기능 구현 
 
-# 
+:milky_way: **예제**
+- [회원 CRUD 기능 구현하기](./test/member_CRUD)
+ 
+ <br>
+
+위 예제의 MemberDAO 클래스 파일에서는 이전에 배웠던 기본 DB 연결 방법도 사용하고, 오늘 배운 DataSource(커넥션풀) 방법도 사용한다. 따라서 아래의 설정이 기본적으로 되어있어야 한다. 
+
+- WEB-INF/lib 폴더에 jdbc 연결된 상태 (mysql connectorJ)
+- Servers의 context.xml 내부에 JNDI 설정
+
+<br>
+최초 실행 파일 : logindb.html 
