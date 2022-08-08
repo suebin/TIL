@@ -97,4 +97,4 @@ dispatch는 “ 현재 서버의 현재 컨텍스트 내부 파일로만 이동 
 2. 첫 번째 서블릿은 `RequestDispatcher`를 이용해 두 번째 서블릿으로 포워드
 
 :milky_way: **예제**
-- [커넥션풀](./test/ConnectionServlet.java)
+- [포워드(dispatch)](./test/forward)
