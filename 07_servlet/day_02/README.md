@@ -55,6 +55,8 @@
 
 ![서블릿 데이터베이스 연동 과정](./image/servlet_database_connection.png)
 
+<br>
 
-
+#### MySQL ConnectorJ 경로 찾기
+![mysql](./image/mysql.png)
 
