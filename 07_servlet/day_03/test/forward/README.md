@@ -3,4 +3,4 @@
 
 ## ForwardTest3과 ForwardTest4
 - 한 사람의 정보를 담은 MemberDTO 객체를 forward4로 전송하는 포워딩 예제
-- [MemberDTO 객체]() 
+- 실행 파일 : forward3.html
