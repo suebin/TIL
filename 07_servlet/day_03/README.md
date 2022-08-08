@@ -174,4 +174,49 @@ HTTP 프로토콜은 각 웹페이지의 상태나 정보를 다른 페이지들
 ---
 
 ## 세션 기능 실행 과정
+ 
+![session](./image/session.png)
 
+1. 브라우저로 사이트 접속
+2. 서버는 접속한 브라우저에 대한 세션 객체를 생성
+3. 서버는 생성된 세션 id를 클라이언트 브라우저에 응답
+4. 브라우저는 서버로부터 받은 세션 id를 브라우저가 사용하는 메모리의 세션 쿠키에 저장
+5. 브라우저가 재접속하면 브라우저는 세션 쿠키에 저장된 세션 id를 서버에 전달
+6. 서버는 전송된 세션 id를 이용해 해당 세션에 접근하여 작업을 수행
+
+<br>
+
+![session](./image/session2.png)
+- 각 브라우저(사용자) 당 각 세션 객체가 생성된다.
+
+---
+
+## 세션 API
+
+
+```java
+// 서블릿에서 세션을 이용하려면 HttpSession 클래스 객체를 사용
+// HttpSession 객체는 HttpServletRequest의 getSession() 메서드를 호출해서 생성
+
+// 기존의 세션 객체가 존재하면 반환, 없으면 생성
+getSession()
+getSession(true)
+
+// 기존의 새션 객체가 존재하면 반환, 없으면 null 반환
+getSession(false)
+
+// 현재 생성된 세션을 유지하기 위해 설정된 세션 유지 시간을 int 타입으로 반환
+getMaxInactiveInterval()
+
+// 속성 이름이 name인 속성 값을 Object 타입으로 반환, 해당되는 속성 이름이 없을 경우 null 값을 반환
+getAttribute()
+
+// 세션 속성 이름이 name인 속성에 속성 값으로 value를 할당
+setAttribute(String name, Object value)
+
+// 세션 속성 이름이 name인 속성을 제거 
+removeAttribute(String name)
+
+// 현재 생성된 세션을 소멸
+invalidate()
+```
