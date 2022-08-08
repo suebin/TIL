@@ -50,7 +50,7 @@ public class ConnectionServlet extends HttpServlet {
 			// 3. jdbc/mydb 태그만 읽어와서 connection pooling 클래스 객체 생성 (name만 다르면 얼마든지 <Resource /> 여러개 만들 수 o)
 			DataSource ds = (DataSource)envContext.lookup("jdbc/mydb");
 			
-			// tomcat 시작 미리 생성 : 배열 형태로 관리 (빌려주고 반납하는 것을 반복)
+			// tomcat 시작할 때 미리 생성 : 배열 형태로 관리 (빌려주고 반납하는 것을 반복)
 			long start = System.currentTimeMillis();
 			
 			for (int i=1; i<=1000; i++) {
