@@ -232,4 +232,4 @@ invalidate()
 <br>
 
  :milky_way: **예제**
-- [세션](./test/forward)
+- [세션](./test/session)
