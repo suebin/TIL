@@ -1,14 +1,15 @@
+:milky_way: **예제**
+- [JSP로 로그인/회원가입 기능 구현하기](./test/login_and_logout)
+- [JSP로 구구단 구현하기](./test/times_table)
+
+---
+
 # JSP 정의와 구성 요소
 
 :milky_way: **책 범위**
 - 11장
 
 <br>
-
-:milky_way: **예제**
-- [JSP로 로그인/회원가입 기능 구현하기](./test/login_and_logout)
-- [JSP로 구구단 구현하기](./test/times_table)
----
 
 ## JSP 등장 배경
 
@@ -71,7 +72,7 @@ JSP는 HTML, CSS와 자바스크립트를 기반으로 JSP 요소들을 사용�
 :milky_way: **책 범위**
 - 12장
 
----
+<br>
 
 ## JSP 스크립트 요소 (Scripting Element)
 
