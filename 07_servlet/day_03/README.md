@@ -153,7 +153,7 @@ removeAttributte(String name)
 <br>
 
  :milky_way: **예제**
-- [포워드(dispatch) +바인딩](./test/forward)
+- [포워드(dispatch) + 바인딩](./test/forward)
 
 ---
 
