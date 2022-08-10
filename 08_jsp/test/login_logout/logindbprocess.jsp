@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>로그인 처리</title>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -40,7 +40,7 @@ else{ //condition == 2
 		%>
 			<h1><%=id%>  계정의 관리자님 로그인하셨습니다 </h1>
 			<ul>
-			<li> 모든 사용자 정보 조회 </li>
+			<li> <a href=allmemberlist.jsp>모든 사용자 정보 조회</a> </li>
 			<li> 블랙리스트 관리 </li>
 			<li> 상품관리 </li>
 			</ul>			
