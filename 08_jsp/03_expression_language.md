@@ -5,9 +5,9 @@
 <br>
 
 ### JSP의 발전 과정
-:fast_forward: HTML 태그를 중심으로 자바를 이용해 화면을 구현
-:fast_forward: 자바 코드를 대체하는 액션 태그
-:fast_forward: JSP 2.0 : 복잡한 자바 코드를 제거하는 방향
+:fast_forward: HTML 태그를 중심으로 자바를 이용해 화면을 구현 <br>
+:fast_forward: 자바 코드를 대체하는 액션 태그 <br>
+:fast_forward: JSP 2.0 : 복잡한 자바 코드를 제거하는 방향 <br>
 :fast_forward: **현재 : 스크립트 요소보다는 “ 표현언어 “ 와 “ JSTL “을 사용해서 구현**
 
 ---
