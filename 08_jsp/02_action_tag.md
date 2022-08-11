@@ -35,7 +35,7 @@ JSP가 등장하게 된 배경은 디자이너가 자바 코드를 사용하지 
 :milky_way: **예제**
 - [Include Action Tag](./test/include)
 - [Forward Action Tag](./test/forward)
-- [useBean, setProperty, getProperty Action Tag](./test/useBean%2C%20setProperty%2C%20getProperty)
+- [useBean, setProperty, getProperty Action Tag : 내 정보 수정 (U)](./test/useBean%2C%20setProperty%2C%20getProperty)
 ---
 ## 번외 : 기본적인 로직
 보통 클라이언트의 요청이 들어오면  `분석 - 처리 - 응답` 의 로직을 따른다. 
