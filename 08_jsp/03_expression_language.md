@@ -5,10 +5,10 @@
 <br>
 
 ### JSP의 발전 과정
-- HTML 태그를 중심으로 자바를 이용해 화면을 구현
-- 자바 코드를 대체하는 액션 태그
-- JSP 2.0 : 복잡한 자바 코드를 제거하는 방향
-- **현재 : 스크립트 요소보다는 “ 표현언어 “ 와 “ JSTL “을 사용해서 구현**
+:fast_forward: HTML 태그를 중심으로 자바를 이용해 화면을 구현
+:fast_forward: 자바 코드를 대체하는 액션 태그
+:fast_forward: JSP 2.0 : 복잡한 자바 코드를 제거하는 방향
+:fast_forward: **현재 : 스크립트 요소보다는 “ 표현언어 “ 와 “ JSTL “을 사용해서 구현**
 
 ---
     
@@ -45,7 +45,7 @@
 
 <br>
 
-### 1. JSP 내용
+### :dolphin: JSP 내용
 
 - **pageContext** : 같은 JSP 파일 내부 EL 값 공유
     - `pageContext.setAttribute();`  (EL →표현식)
@@ -56,7 +56,7 @@
 
 <br>
 
-### 2. 요청 매개변수
+### :dolphin: 요청 매개변수
 
 - **param** : 한 개의 값을 전달하는 요청 매개변수를 처리
     - = `request.getParameter()` 와 같은 의미
@@ -68,7 +68,7 @@
     
 <br>
 
-### 3. 스코프
+### :dolphin: 스코프
 
 - **pageScope**
 - **requestScope**
@@ -80,6 +80,6 @@
 
 <br>
 
-### 4. 빈 사용
+### :dolphin: 빈 사용
 :milky_way: **예제**
 - [빈 사용](./test/el/eltest4.jsp)
