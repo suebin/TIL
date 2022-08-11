@@ -1,12 +1,23 @@
-package dto;
-//JDBC -- MYBATIS
 public class MemberDTO {
-	String id; // varchar(30) 
-	int password;// int 
-	String name;// varchar(30) 
-	String phone; //char(13) 
-	String email; // varchar(30) 
+	String id; 
+	int password;
+	String name;
+	String phone; 
+	String email; 
 	String regdate;
+	
+	// 기본 생성자 수동 정의
+	public MemberDTO(){}
+	
+	// 매개변수 생성자 정의
+	public MemberDTO(String id, int password, String name, String phone, String email, String regdate) {
+		this.id = id;
+		this.password = password;
+		this.name = name;
+		this.phone = phone;
+		this.email = email;
+		this.regdate = regdate;
+	}
 	
 	public String getId() {
 		return id;
@@ -44,12 +55,11 @@ public class MemberDTO {
 	public void setRegdate(String regdate) {
 		this.regdate = regdate;
 	}
+	
 	@Override
 	public String toString() {
 		return id + " 회원님의 이름은 " + name + " , 폰번호는 " + phone + " , 이메일은 " + email
 			+ " , 가입일은 " + regdate + " 입니다.";	
-	}
-
-	
-	
+	}	
 }
+
