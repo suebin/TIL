@@ -21,13 +21,13 @@ JSP가 등장하게 된 배경은 디자이너가 자바 코드를 사용하지 
     - `<jsp:forward page="포워딩 할 JSP 페이지">`
     - 서블릿에서 RequestDispaatcher 클래스의 포워딩 기능을 대신한다.
 - **useBean 액션 태그**
-    - `<jsp:useBean>`
+    - `<jsp:useBean id="빈 이름" class="패키지 이름을 포함한 자바 빈 클래스 [scope="접근범위"] />`
     - 객체를 생성하기 위한 new 연산자를 대신한다.
 - **setProperty 액션 태그**
-    - `<jsp:setProperty>`
+    - `<jsp:setProperty name="자바 빈 이름(useBean 액션 태그의 id)" property="속성 이름" value="값" />`
     - setter를 대신한다.
 - **getProperty 액션 태그**
-    - `<jsp:getProperty>`
+    - `<jsp:getProperty name="자바 빈 이름(useBean 액션 태그의 id)" property="속성 이름" />`
     - getter를 대신한다.
     
 <br>
@@ -35,9 +35,9 @@ JSP가 등장하게 된 배경은 디자이너가 자바 코드를 사용하지 
 :milky_way: **예제**
 - [Include Action Tag](./test/include)
 - [Forward Action Tag](./test/forward)
-
+- [useBean, setProperty, getProperty Action Tag](./test/useBean%2C%20setProperty%2C%20getProperty)
 ---
-## 기본적인 로직
+## 번외 : 기본적인 로직
 보통 클라이언트의 요청이 들어오면  `분석 - 처리 - 응답` 의 로직을 따른다. 
 
 - 요청 분석 : servlet
