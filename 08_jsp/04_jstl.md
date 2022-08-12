@@ -9,11 +9,12 @@ JSP 페이지에서 자주 사용하는 자바 코드를 대체하기 위해 만
 
 <br>
 
-- JSTL(JSP Standard Tag Library) 
-    - JSP 페이지에서 가장 많이 사용하는 기능을 태그로 제공한다.
-    - JSTL 라이브러리를 따로 설치해서 사용한다.
-- 개발자가 만든 커스텀 태그 
-    - 스트러츠나 스프링 프레임워크에서 미리 만들어서 제공한다.
+#### JSTL(JSP Standard Tag Library) 
+- JSP 페이지에서 가장 많이 사용하는 기능을 태그로 제공한다.
+- JSTL 라이브러리를 따로 설치해서 사용한다.
+
+#### 개발자가 만든 커스텀 태그 
+- 스트러츠나 스프링 프레임워크에서 미리 만들어서 제공한다.
 
 
 ---
@@ -23,11 +24,11 @@ JSTL(JSP Standard Tag Library)이란 커스텀 태그 중 가장 많이 사용�
 
 <br>
 
-- 사용 방법
+#### 사용 방법
 
-    1. 라이브러리 다운받기 (https://repo1.maven.org/maven2/jstl/jstl/1.2/)
-    2. 프로젝트의 lib 폴더에 붙여 넣기
-    3. JSP 페이지 상단에 `<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>` 추가하기
+1. 라이브러리 다운받기 (https://repo1.maven.org/maven2/jstl/jstl/1.2/)
+2. 프로젝트의 lib 폴더에 붙여 넣기
+3. JSP 페이지 상단에 `<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>` 추가하기
 
 ---
 
