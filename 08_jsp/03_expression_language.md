@@ -81,3 +81,16 @@
 ### :dolphin: 빈 사용
 :milky_way: **예제**
 - [빈 사용](./test/el/eltest4.jsp)
+
+<br>
+
+### :dolphin: Collection 객체, HashMap
+:milky_way: **예제**
+- [ArrayList, HashMap](./test/el/eltest5.jsp)
+
+---
+
+## 표현 언어로 바인딩 속성 출력하기
+- [scope 예제를 참조하자](#dolphin-스코프)
+
+
