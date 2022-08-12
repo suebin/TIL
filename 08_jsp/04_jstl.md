@@ -24,7 +24,7 @@ JSTL(JSP Standard Tag Library)이란 커스텀 태그 중 가장 많이 사용�
 
 <br>
 
-#### 사용 방법
+#### Core 태그 라이브러리 사용 방법
 
 1. 라이브러리 다운받기 (https://repo1.maven.org/maven2/jstl/jstl/1.2/)
 2. 프로젝트의 lib 폴더에 붙여 넣기
