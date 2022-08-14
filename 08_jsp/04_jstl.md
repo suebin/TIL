@@ -47,7 +47,7 @@ JSTL(JSP Standard Tag Library)이란 커스텀 태그 중 가장 많이 사용�
 
 - **URL 처리**
     - `<c:url>` : 요청 매개변수로부터 URL을 생성한다.
-    - `<c:import>` : URL을 이용해 다른 자원을 JSP 페이지에 추가한다. (jstl2.jsp)
+    - `<c:import>` : URL을 이용해 다른 자원을 JSP 페이지에 추가한다.
 
 <br>
 
