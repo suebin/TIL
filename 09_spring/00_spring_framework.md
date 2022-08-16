@@ -7,7 +7,7 @@
 
 :milky_way: **목차**
 - [프레임워크 (Framework) 란 ?](#프레임워크-framework-란)
-- [스프링 프레임워크 (Spring Framework)](#스프링-프레임워크-spring-framework)
+- [스프링 프레임워크 (Spring Framework)](#spring-framework)
 - [스프링의 특징](#스프링의-특징)
 - [스프링의 주요 기능](#스프링의-주요-기능)
 
@@ -21,7 +21,7 @@
 
 ---
 
-## 스프링 프레임워크 (Spring Framework)
+## Spring Framework
 - 자바 웹 애플리케이션 개발을 위한 **오픈 소스 프레임워크**
 - 기존 프레임워크보다 가벼운 경량 프레임워크(lightWeight Framework)
 - 애플리케이션에서 사용되는 여러 가지 빈(클래스 객체)을 개발자가 아닌 스프링이 권한을 가지고 직접 관리
