@@ -1,2 +1,0 @@
-![memberservice](./image/memberservice.PNG)
-
