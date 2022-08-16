@@ -8,10 +8,10 @@
 :milky_way: **목차**
 - [Inversion of Control(IoC) 이란 ?](#inversion-of-controlioc-이란)
 - [Dependency Injection(DI) 이란?](#dependency-injectiondi-이란)
-    - `xml` 방법
-        - [Setter Injection](#1-setter-injection-setter를-이용한-di-기능)
-        - [Constructor Injection](#2-constructor-injection-생성자를-이용한-di-기능)
-    - `annotation` 방법
+    1. `xml` 방법
+        - [Setter Injection](#1-setter-injection)
+        - [Constructor Injection](#2-constructor-injection)
+    2. `annotation` 방법
 
 <br>
 
@@ -42,7 +42,9 @@
 
 #### = 의존성 주입
 
-- 각 객체간의 의존성을 **스프링 컨테이너(Spring Container)**가 자동으로 연결
+<br>
+
+- 각 객체간의 의존성을 스프링 컨테이너(Spring Container)가 자동으로 연결
 - 개발자가 객체를 직접 생성하는 방식이 아니라 외부에서 생성하여 주입시켜주는 방식
 
 <br>
@@ -62,17 +64,20 @@
 
 ---
 
+<br>
+
 > 의존성 주입(DI)의 두 가지 방법을 공부할 것이다.
 > 
-> 바로 **setter**를 이용한 DI 기능과 **생성자(Constructor)**를 이용한 DI 기능이다.
+> 바로 setter를 이용한 DI 기능과 생성자(constructor)를 이용한 DI 기능이다.
 >
 > 의존성 주입(DI)은 `xml` 또는 `annotation`을 이용한다.
 >
-> 먼저 `Spring Bean Configuration File`인 xml 파일로 DI를 해보자.
+> 먼저 xml 파일인 `Spring Bean Configuration File`로 DI를 해보자.
 
 <br>
 
-## 1. Setter Injection (setter를 이용한 DI 기능)
+## 1. Setter Injection 
+- setter를 이용한 DI 기능
 
 ```xml
 <bean id="" class="" />
@@ -82,7 +87,8 @@
 
 <br>
 
-## 2. Constructor Injection (생성자를 이용한 DI 기능)
+## 2. Constructor Injection
+- 생성자를 이용한 DI 기능
 
 ```xml
 <bean id="" class="" />
@@ -92,7 +98,7 @@
 
 ---
 
-## <bean> 태그에 사용되는 여러 가지 속성들
+## `<bean>` 태그에 사용되는 여러 가지 속성들
 - `id` : bean 객체의 고유 이름으로, bean id를 이용해 bean에 접근한다.
 - `name` : 객체의 별칭이다.
 - `class` : 생성할 클래스이다. 패키지 이름까지 입력해야 한다.
