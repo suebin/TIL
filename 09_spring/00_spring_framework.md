@@ -28,7 +28,7 @@
 
 ---
 
-## 스프링의 특징
+## Spring의 특징
 - EJB 보다 가볍고 배우기 쉬우며 경량 컨테이너의 기능을 수행
 - IoC(Inversion of Control) 
 - DI(Dependency Injection)
@@ -39,7 +39,7 @@
 
 ---
 
-## 스프링의 주요 기능
+## Spring의 주요 기능
 
 ![spring framework](./image/spring_framework.png)
 
