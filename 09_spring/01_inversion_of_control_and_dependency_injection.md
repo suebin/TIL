@@ -15,6 +15,11 @@
 
 <br>
 
+:milky_way: **예제**
+- [프로그래밍 개발 패턴 예제](./test/memberservice)
+
+<br>
+
 ---
 
 # Inversion of Control(IoC) 이란 ?
@@ -95,6 +100,9 @@
     <constructor-arg name="" value="" or ref=""/>
 </bean>
 ```
+
+:milky_way: **예제**
+- [xml로 의존성 주입(DI)](./test/command)
 
 ---
 
