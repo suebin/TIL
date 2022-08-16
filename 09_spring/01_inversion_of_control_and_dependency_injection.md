@@ -1,5 +1,23 @@
-# Inversion of Control(IoC) 이란 ?
+# IoC와 DI
 
+:milky_way: **책 범위**
+- 19장
+
+<br>
+
+:milky_way: **목차**
+- [Inversion of Control(IoC) 이란 ?](#inversion-of-controlioc-이란)
+- [Dependency Injection(DI) 이란?](#dependency-injectiondi-이란)
+    - `xml` 방법
+        - [Setter Injection](#1-setter-injection-setter를-이용한-di-기능)
+        - [Constructor Injection](#2-constructor-injection-생성자를-이용한-di-기능)
+    - `annotation` 방법
+
+<br>
+
+---
+
+# Inversion of Control(IoC) 이란 ?
 
 #### = 제어의 역전
 
@@ -54,7 +72,7 @@
 
 <br>
 
-## 1. Setter Injectioin (setter를 이용한 DI 기능)
+## 1. Setter Injection (setter를 이용한 DI 기능)
 
 ```xml
 <bean id="" class="" />
