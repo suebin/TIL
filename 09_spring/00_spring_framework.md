@@ -7,9 +7,9 @@
 
 :milky_way: **목차**
 - [프레임워크 (Framework) 란 ?](#프레임워크-framework-란)
-- [스프링 프레임워크 (Spring Framework)](#spring-framework)
-- [스프링의 특징](#스프링의-특징)
-- [스프링의 주요 기능](#스프링의-주요-기능)
+- [Spring Framework](#spring-framework)
+- [Spring의 특징](#spring의-특징)
+- [Spring의 주요 기능](#spring의-주요-기능)
 
 <br>
 
