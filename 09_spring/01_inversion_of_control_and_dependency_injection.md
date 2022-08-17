@@ -70,19 +70,19 @@
 
 <br>
 
-> 의존성 주입(DI)의 두 가지 방법을 공부할 것이다.
-> 
-> 바로 setter를 이용한 DI 기능과 생성자(constructor)를 이용한 DI 기능이다.
+
 >
 > 의존성 주입(DI)은 `xml` 또는 `annotation`을 이용한다.
 >
-> 먼저 xml 파일인 `Spring Bean Configuration File`로 DI를 해보자.
+
 
 <br>
 
 ## xml 방법
 
-### 1. Setter Injection 
+### Spring Bean Configuration File
+
+#### 1. Setter Injection 
 - setter를 이용한 DI 기능
 
 ```xml
@@ -93,7 +93,7 @@
 
 <br>
 
-### 2. Constructor Injection
+#### 2. Constructor Injection
 - 생성자를 이용한 DI 기능
 
 ```xml
