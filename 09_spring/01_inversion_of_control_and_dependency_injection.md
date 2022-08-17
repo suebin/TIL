@@ -124,10 +124,10 @@
 - `@Component` 
     - 스프링 컨테이너에 의해 해당 클래스 객체를 생성한다.
     - 스프링 bean으로 자동 등록된다. 
-        - `@Component` : 주로 기타 자원 클래스에서 사용한다. (ex) MemberDTO)
-        - `@Controller` : Spring MVC presentation layer (ex) MemberController)
-        - `@Service` : Business(Service) layer (ex) MemberService)
-        - `@Repository` :Persistence/Data Access Layer (ex) MemberDAO) 
+
+    ![@Component](./image/%40component.png)
+    - `@Component` : 주로 기타 자원 클래스에서 사용한다. (ex) MemberDTO)
+
 
 <br>
 
