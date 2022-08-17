@@ -121,24 +121,25 @@
 <br>
 
 ### Spring IoC Annotation
-- `@Component` 
+
+#### `@Component` 
     - 스프링 컨테이너에 의해 해당 클래스 객체를 생성한다.
     - 스프링 bean으로 자동 등록된다. 
     - `@Component` : 주로 기타 자원 클래스에서 사용한다. (ex) MemberDTO)
 
     ![@Component](./image/%40component.png)
 
-
-
 <br>
 
+#### 의존 객체 자동 주입 (Automatic Dependency Injection)
+스프링 컨테이너가 자동으로 연관된 스프링 bean을 찾아 의존성을 주입한다.
 - `@Autowired` 
-    - 연관된 스프링 bean을 Type에 따라 스프링 컨테이너에서 찾아서 주입해준다.
-    - Type을 먼저 확인하고 못 찾는다면 name에 따라 bean을 주입해준다.   
-    - 해당 타입의 bean 객체가 존재하지 않거나, 2개 이상 존재한다면 예외가 발생한다.
-    - 같은 타입의 객체가 2개 이상이라면 `@Qualifier("이름")`와 같이 사용하면 된다.
-- `@Resource(name="")`  
-    - @Autowired와 같이 스프링 bean을 Type으로 검색하지만 name을 지정한다는 차이점이 있다.
+    - 타입이 동일한 bean 객체가 여러개 있으면 Exception 발생하기 때문에 `@Qualifier("이름")`도 같이 사용한다.
+    - Bean 검색 우선순위 : 타입 -> 이름
+    - 사용할 수 있는 위치 : 필드, 생성자, setter
+- `@Resource(name="이름")`
+    - Bean 검색 우선순위 : 이름 -> 타입
+    - 사용할 수 있는 위치 : 필드, 파라미터가 1개인 setter
 
 ---
 ## 스프링 빈(Bean)이란 ?
