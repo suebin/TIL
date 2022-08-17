@@ -26,9 +26,7 @@
 
 - start, open : 폴더/파일 열기
 
-
 ---
-
 
 # CLI 와 GUI
 
