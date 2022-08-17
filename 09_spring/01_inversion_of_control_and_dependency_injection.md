@@ -122,16 +122,16 @@
 
 ### Spring IoC Annotation
 
-#### @Component 
+#### 1. @Component 
 - 스프링 컨테이너에 의해 해당 클래스 객체를 생성한다.
 - 스프링 bean으로 자동 등록된다. 
 - `@Component` : 주로 기타 자원 클래스에서 사용한다. (ex) MemberDTO)
 
 ![@Component](./image/%40component.png)
 
-<br>
 
-#### 의존 객체 자동 주입 (Automatic Dependency Injection)
+
+#### 2. 의존 객체 자동 주입 (Automatic Dependency Injection)
 스프링 컨테이너가 자동으로 연관된 스프링 bean을 찾아 의존성을 주입한다.
 - `@Autowired` 
     - 타입이 동일한 bean 객체가 여러개 있으면 Exception 발생하기 때문에 `@Qualifier("이름")`도 같이 사용한다.
