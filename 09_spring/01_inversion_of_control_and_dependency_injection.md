@@ -8,15 +8,14 @@
 :milky_way: **목차**
 - [Inversion of Control(IoC) 이란 ?](#inversion-of-controlioc-이란)
 - [Dependency Injection(DI) 이란?](#dependency-injectiondi-이란)
-    1. `xml` 방법
-        - [Setter Injection](#1-setter-injection)
-        - [Constructor Injection](#2-constructor-injection)
-    2. `annotation` 방법
+    1. [`xml` 방법](#xml-방법)
+    2. [`annotation` 방법](#annotation-방법)
 
 <br>
 
 :milky_way: **예제**
-- [프로그래밍 개발 패턴 예제](./test/memberservice)
+- [DI (xml)](./test/memberservice)
+- [DI (annotation)](./test/annotation.memberservice)
 
 <br>
 
@@ -81,7 +80,9 @@
 
 <br>
 
-## 1. Setter Injection 
+## xml 방법
+
+### 1. Setter Injection 
 - setter를 이용한 DI 기능
 
 ```xml
@@ -92,7 +93,7 @@
 
 <br>
 
-## 2. Constructor Injection
+### 2. Constructor Injection
 - 생성자를 이용한 DI 기능
 
 ```xml
@@ -101,10 +102,7 @@
 </bean>
 ```
 
-:milky_way: **예제**
-- [xml로 의존성 주입(DI)](./test/command)
-
----
+<br>
 
 ## `<bean>` 태그에 사용되는 여러 가지 속성들
 - `id` : bean 객체의 고유 이름으로, bean id를 이용해 bean에 접근한다.
@@ -113,3 +111,34 @@
 - `constructor-arg` : 생성자를 이용해 값을 주입할 때 사용한다.
 - `property` : setter를 이용해 값을 주입할 때 사용한다.
 
+---
+## annotation 방법
+
+### Spring configure 설정 필요
+```xml
+<context:component-scan base-package="패키지명" />
+```
+<br>
+
+### Spring IoC Annotation
+- `@Component` 
+    - 스프링 컨테이너에 의해 해당 클래스 객체를 생성한다.
+    - 스프링 bean으로 자동 등록된다. 
+        - `@Component` : 주로 기타 자원 클래스에서 사용한다. (ex) MemberDTO)
+        - `@Controller` : Spring MVC presentation layer (ex) MemberController)
+        - `@Service` : Business(Service) layer (ex) MemberService)
+        - `@Repository` :Persistence/Data Access Layer (ex) MemberDAO) 
+
+<br>
+
+- `@Autowired` 
+    - 연관된 스프링 bean을 Type에 따라 스프링 컨테이너에서 찾아서 주입해준다.
+    - Type을 먼저 확인하고 못 찾는다면 name에 따라 bean을 주입해준다.   
+    - 해당 타입의 bean 객체가 존재하지 않거나, 2개 이상 존재한다면 예외가 발생한다.
+    - 같은 타입의 객체가 2개 이상이라면 `@Qualifier("이름")`와 같이 사용하면 된다.
+- `@Resource(name="")`  
+    - `@Autowired`와 같이 스프링 bean을 Type으로 검색하지만 name을 지정한다는 차이점이 있다.
+
+---
+## 스프링 빈(Bean)이란 ?
+- 스프링 컨테이너에 의해 만들어진 자바 객체

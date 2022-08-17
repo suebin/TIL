@@ -1,13 +1,13 @@
-package memberservice;
+package annotation.memberservice;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 // 회원가입을 하고, 신입사원 등록까지 한다.
+@Service("service1")
 public class MemberService1 implements MemberService {
+	@Autowired
 	MemberDAO dao;
-	
-	// setter injection
-	public void setDao(MemberDAO dao) {
-		this.dao = dao;
-	}
 	
 	@Override
 	public void registerMember() {
