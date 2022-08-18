@@ -3,7 +3,8 @@ annotation을 사용하면 훨씬 코드가 간결해진다.
 <br>
 
 >
->`springmvc 패키지`와 `annotation.springmvc` 패키지는 동일한 기능을 한다. <br>
+>`springmvc 패키지`와 `annotation.springmvc` 패키지는 동일한 기능을 한다. 
+>
 >다만, `springmvc` 패키지는 annotation을 사용하지 않았고, `annotation.springmvc 패키지`는 annotation을 사용하였다. 
 >
 >jsp파일은 동일하다.
