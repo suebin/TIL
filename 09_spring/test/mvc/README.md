@@ -19,7 +19,7 @@
 >xml 파일 중 중요한 세 가지를 알아보자.
 >
 - `web.xml` : 서블릿 매핑, welcome file 리스트, web/spring/mvc 웹 환경 설정 파일 
-- `pom.xml` : maven 라이브러리 관련 파일
+- `pom.xml` : maven 라이브러리 관련 파일, 스프링 라이브러리 버전, 추가 설정 관리
 - `servlet-context.xml` : spring mvc 관련 설정 파일 
 
 <br>
