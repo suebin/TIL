@@ -3,12 +3,18 @@ annotation을 사용하면 훨씬 코드가 간결해진다.
 <br>
 
 `springmvc 패키지`와 `annotation.springmvc` 패키지는 동일한 기능을 한다.
+
+<br>
+
 다만, `springmvc` 패키지는 annotation을 사용하지 않았고, `annotation.springmvc 패키지`는 annotation을 사용하였다.
+
+<bt>
+
 jsp파일은 동일하다.
 
 <br>
 
-1. 톰캣 서버 실행하고 `http://localhost:8080/test/login`을 들어가면, 로그인 입력 창이 뜬다(loginform.jsp)
+1. 톰캣 서버 실행하고 `http://localhost:8080/test/login`을 들어가면, 로그인 입력 창이 뜬다(loginform.jsp) 
 2. 입력하고, 로그인 버튼을 누르면 입력값이 POST방식으로 loginresult.jsp로 전달되어 출력된다.
 
 <br>
