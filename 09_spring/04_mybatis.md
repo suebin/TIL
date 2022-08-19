@@ -4,9 +4,9 @@
 ---
 
 ## 마이바티스(MyBatis)란 ?
-**= 데이터베이스 연동 관련 프레임워크** <br>
-**= SQL Mapper Framework** <br>
-**= 기존 JDBC 연동 방식을 개선해 SQL문의 가독성을 높여 사용하기 편하게 만든 것**
+- 데이터베이스 연동 관련 프레임워크
+- SQL Mapper Framework
+- 기존 JDBC 연동 방식을 개선해 SQL문의 가독성을 높여 사용하기 편하게 만든 것
 
 <br>
 
