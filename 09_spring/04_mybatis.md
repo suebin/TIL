@@ -207,8 +207,8 @@ public class MemberMain {
 		
 		
 		// 3. paginglist() : 페이징 처리 
-					// 키보드 입력 : 1 -> 등록시간순으로 나열하여 가장 빠른 4명을 출력 1페이지
-					// 키보드 입력 : 2 -> 등록시간순으로 나열하여 5,6,7,8번째 출력
+				// 키보드 입력 : 1 -> 등록시간순으로 나열하여 가장 빠른 4명을 출력 1페이지
+			    // 키보드 입력 : 2 -> 등록시간순으로 나열하여 5,6,7,8번째 출력
 		int[] limit = {0, 4};
 		List<MemberDTO> list3 = service.paginglist(limit);
 		for(MemberDTO dto : list3) {
