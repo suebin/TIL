@@ -3,7 +3,7 @@
 
 ---
 
-## 마이바티스(MyBatis)란 ?
+## 마이바티스(MyBatis) 란 ?
 - 데이터베이스 연동 관련 프레임워크
 - SQL Mapper Framework
 - 기존 JDBC 연동 방식을 개선해 SQL문의 가독성을 높여 사용하기 편하게 만든 것
@@ -23,12 +23,15 @@
 
 ---
 
+## MyBatis 실습
+
 >
 >Spring DB 연동 방법은 세 가지가 있다.
 >
 >1. JDBC (java.sql.* 사용)
 >2. Spring JDBC (Spring api org.spring ...)
 >3. MyBatis 프레임워크 기능
+>
 >
 >1번 방법은 최근에 MySQL 공부할 때 배웠다.
 >
@@ -43,6 +46,7 @@
 ### 0. pom.xml 설정
 - MySQL JDBC driver.jar
 - MyBatis.jar
+
 ![pom](./image/pom.PNG)
 
 <br>
