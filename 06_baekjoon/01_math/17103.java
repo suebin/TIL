@@ -38,11 +38,7 @@ public class Main {
 				}
 			}
 			System.out.println(count);
-		}
-		
-		
-		
-		
+		}	
 	}
 	
 	// 소수이면 false
