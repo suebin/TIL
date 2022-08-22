@@ -450,18 +450,3 @@ public class MemberDTO {
 }
 ```
 
-
-방법 1
-session.commit() : 임시 버퍼에 저장된 데이터를 DB에 실제 반영된다.
-session.rollback() : 임시 버퍼 저장 취소
-
-방법 2 
-SqlSession session = factory.openSession(true);
-: DB 연결 시 true를 넣어주면 auto commit
-
-
-session.insert
-session.update
-session.delete
-
----
