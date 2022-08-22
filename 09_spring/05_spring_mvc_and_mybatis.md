@@ -1,4 +1,4 @@
-# Spring MVC와 MyBatis 연동하기
+# Spring MVC와 MyBatis 연동한 실습
 
 
 ### 0. pom.xml 설정
