@@ -190,6 +190,7 @@ public class MemberMain {
 		SqlSessionFactory factory = builder.build(Resources.getResourceAsReader("mybatis/mybatis-config.xml"));
 		// DB 연결
 		SqlSession session = factory.openSession(); 
+		// SqlSession session = factory.openSession(true); : auto commit  
 		
 		MemberDAO dao = new MemberDAO();
 		dao.setSession(session); // dao에게 session을 넘겨준다.
