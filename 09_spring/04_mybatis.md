@@ -50,8 +50,8 @@
 <br>
 
 ### 0. pom.xml 설정
-- MySQL JDBC driver.jar
-- MyBatis.jar
+- mysql-connector-java.jar
+- mybatis.jar
 
 ![pom](./image/pom.PNG)
 
@@ -72,6 +72,12 @@
 <!-- MyBatis DB 연결 정보 세팅 -->
 
 <configuration>
+
+	<!-- DTO 객체 Alias 지정 (선택사항) -->
+	<typeAliases>
+		<typeAlias type="mybatis.MemberDTO" alias="memberdto"/>
+	</typeAliases>
+
 	<!-- DB 연결 정보에 따라 DB 생성 -->
 	<environments default="mydb">
 		<environment id="mydb">
@@ -220,6 +226,19 @@ public class MemberMain {
 		for(MemberDTO dto : list3) {
 			System.out.println(dto);
 		}
+
+		// 4. 회원 가입 (insert) 
+		MemberDTO insertdto = new MemberDTO();
+		insertdto.setId("mybatis");
+		insertdto.setPassword(1111);
+		insertdto.setName("홍길동");
+		insertdto.setPhone("01000000000");
+		insertdto.setEmail("hong@kil.com");
+		
+		int result = service.registerMember(insertdto);
+		System.out.println(result);
+		session.commit(); // commit 하면 DB에 실제 반영된다.
+		// session.rollback();  : 임시 버퍼 저장 취소
 	}
 }
 ```
@@ -239,6 +258,7 @@ public interface MemberService {
 	public List<MemberDTO> memberlist();
 	public List<MemberDTO> onemember(String id);
 	public List<MemberDTO> paginglist(int[] limit);
+	public int registerMember(MemberDTO dto);
 }
 ```
 
@@ -281,6 +301,20 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public List<MemberDTO> paginglist(int[] limit) {
 		return dao.pagingList(limit);
+	}
+
+	//회원가입
+	@Override
+	public int registerMember(MemberDTO dto) {
+		//dto.getId() 조회해본다. 
+		List<MemberDTO> list = dao.oneMember(dto.getId());
+		//조회 결과 있는지 확인한다
+		if(list == null || list.size() == 0) {
+			return dao.insertMember(dto);
+		}
+		else {
+			return 0;
+		}
 	}
 }
 ```
@@ -325,6 +359,10 @@ public class MemberDAO {
 	// pagintlist라는 id를 가진 sql에 int 배열을 전달해 SQL문을 실행하고 MemberDTO 타입의 list로 리턴
 	public List<MemberDTO> pagingList(int[] limit) {
 		return session.selectList("paginglist", limit);
+	}
+
+	public int insertMember(MemberDTO dto) {
+		return session.insert("insertmember", dto);
 	}
 }
 ```
@@ -411,3 +449,19 @@ public class MemberDTO {
 	}	
 }
 ```
+
+
+방법 1
+session.commit() : 임시 버퍼에 저장된 데이터를 DB에 실제 반영된다.
+session.rollback() : 임시 버퍼 저장 취소
+
+방법 2 
+SqlSession session = factory.openSession(true);
+: DB 연결 시 true를 넣어주면 auto commit
+
+
+session.insert
+session.update
+session.delete
+
+---
