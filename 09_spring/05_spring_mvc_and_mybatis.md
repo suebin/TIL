@@ -1,5 +1,6 @@
-# Spring MVC와 MyBatis 연동한 프로젝트에 필요한 xml
+# Spring MVC와 MyBatis 프로젝트
 
+## xml 파일
 
 ### 0. pom.xml 설정
 - mysql-connector-java.jar
