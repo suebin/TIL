@@ -1,4 +1,4 @@
-# Spring MVC와 MyBatis 연동한 실습
+# Spring MVC와 MyBatis 연동한 프로젝트에 필요한 xml
 
 
 ### 0. pom.xml 설정
@@ -135,6 +135,3 @@
 <context:component-scan base-package="spring.mybatis" />
 ```
 
----
-
-### Controller
