@@ -136,4 +136,3 @@
 <context:component-scan base-package="spring.mybatis" />
 ```
 
----
