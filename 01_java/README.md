@@ -1,5 +1,7 @@
 ## JAVA
 
+---
+
 - [다형성과 객체 형 변환](https://github.com/suebin/TIL/blob/master/01_java/java/polymorphism_and_object_type_casting.md) 
 - [인터페이스](https://github.com/suebin/TIL/blob/master/01_java/java/interface.md)
 - [중첩 클래스와 중첩 인터페이스](https://github.com/suebin/TIL/blob/master/01_java/java/nestedclass_and_nestedinterface.md)
