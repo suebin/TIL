@@ -135,6 +135,3 @@
 <!-- Spring MVC Annotation 사용 -->
 <context:component-scan base-package="spring.mybatis" />
 ```
-
-
----
