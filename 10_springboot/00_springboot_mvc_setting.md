@@ -100,7 +100,7 @@ public interface BoardDao {
 </mapper>
 ```
 - `<mapper namespace="패키지명.DAO인터페이스명">`
-- `<SQL문 태그 id="DAO의 메서드명" parameterType="DAO의 매개변수" resultType="DAO의 리턴타입">
+- `<SQL문 태그 id="DAO의 메서드명" parameterType="DAO의 매개변수" resultType="DAO의 리턴타입">`
 
 <br>
 
