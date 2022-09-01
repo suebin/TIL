@@ -57,18 +57,18 @@
 #### 0. `Add Starters`
 
 ![mybatis-0](./image/mybatis-0.png)
-![mybatis-1](./image/mybatis-1.png)
-![mybatis-2](./image/mybatis-2.png)
+![mybatis-1](./image/mybatis-1.PNG)
+![mybatis-2](./image/mybatis-2.PNG)
 
 <br>
 
 #### 1. 경로 설정
-![mybatis-3](./image/mybatis-3.png)
+![mybatis-3](./image/mybatis-3.PNG)
 
 <br>
 
 #### 2. `application.properties` 
-![mybatis-4](./image/mybatis-4.png)
+![mybatis-4](./image/mybatis-4.PNG)
 
 ---
 ## 6. DAO
