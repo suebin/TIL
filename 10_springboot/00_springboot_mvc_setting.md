@@ -93,9 +93,11 @@ public interface BoardDao {
 <!-- ex) board-mapping.xml -->
 <mapper namespace="board.spring.mybatis.BoardDAO">
 
-<insert id="insertBoard" parameterType="boarddto">
-    insert into board values ...
-</insert>
+    <insert id="insertBoard" parameterType="boarddto">
+        insert into board values ...
+    </insert>
+
+</mapper>
 ```
 - `<mapper namespace="패키지명.DAO인터페이스명">`
 - `<SQL문 태그 id="DAO의 메서드명" parameterType="DAO의 매개변수" resultType="DAO의 리턴타입">
