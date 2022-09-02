@@ -4,7 +4,7 @@
 <br>
 
 ## 0. application.properties
-- 여러 가지 설정
+- 여러 가지 설정을 한다.
 ![application.properties](./image/applicationproperties.PNG)
 
 ---
