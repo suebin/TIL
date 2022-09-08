@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 public class Main {
 
 	static int mod = 1000000009;
-
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuffer sb = new StringBuffer();
