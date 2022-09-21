@@ -1,2 +1,2 @@
-# Database Modeling
+# DB 모델링
 
