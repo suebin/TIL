@@ -112,4 +112,3 @@ public interface BoardDao {
 - application.properties 외 추가 설정을 여기서 한다.
 ![mywebconfig](./image/mywebconfig.PNG)
 
----
