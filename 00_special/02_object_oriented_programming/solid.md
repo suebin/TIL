@@ -25,7 +25,7 @@
 - “There should never be more than one reason for a class to change.”
 - 한 클래스는 **하나의 책임** (axis of change)만 가져야 한다.
     - 어떤 변화에 의해 클래스를 변경해야 하는 이유는 오직 하나 뿐 이어야 한다.
-- 책임은 **“캡슐화”** 한다.
+- 책임은 “캡슐화” 한다.
 - 응집도 (Cohesion)를 높이고 결합도 (Coupling)를 낮춘다.
 - 가독성이 향상되고, 유지보수가 용이해진다.
 - 다른 원칙들을 적용하는 기초가 된다.
@@ -193,7 +193,9 @@ public class BankAccount {
     - **변하는 것은 숨기고 변하지 않는 것에 의존**한다.
     - 변하는 것과 변하지 않는 것을 엄격히 구분한다.
 - 관리와 재사용이 가능한 코드를 만드는 기반이 된다.
-- **“추상화”**는 OCP 의 핵심요소이다.
+- “추상화”는 OCP 의 핵심요소이다.
+
+<br>
 
 개방 폐쇄의 원칙은 버틀란트 메이어 (Bertrand Meyer)가 1998년 책 <Object-Oriented Software Construction>3에서 정의한 개념이다. 소프트웨어 구성요소 (컴포넌트, 클래스, 모듈, 함수)는 확장에는 열려있고, 변경에는 닫혀있어야 한다는 원리이다. 즉, 변경을 위한 비용은 가능한 줄이고, 확장을 위한 비용은 가능한 극대화 해야 한다는 것이다. 버틀란트 메이어는 이 원칙을 적용하기 위해 상속을 사용해야 한다고 했다. 하지만 상속은 서브 클래스가 구현에 의존하는 경우 슈퍼 클래스의 세부 정보와 긴밀히 결합한다. 따라서, SOLID 원칙을 정리한 로버트 마틴 (Robert C. Martin)은 개방 폐쇄의 원칙을 **인터페이스**를 사용하여 행위 (behavior)를 정의하고, 정의된 코드를 쉽게 대체할 수 있는 다양한 구현을 허용하도록 하였다. 또한, OCP의 주요한 메커니즘은 추상화와 다형성이라고 하였다.
 
@@ -216,8 +218,8 @@ public class BankAccount {
 - 계약에 의한 설계 (Design by Contract)와 유사성을 지닌다.
 - OCP를 위반하지 않도록 하는 기반 원칙
 - 행동적 하위형 (Behavioral Subtype)
-    - 객체에 대한 대체 가능성 (Notion of substitutability for object)을 정의
-- LSP를 위반하는 전형적인 예 : Circle-ellipse Problem
+    - 객체에 대한 대체 가능성 (Notion of substitutability for object)을 정의한다.
+- LSP를 위반하는 전형적인 예로 Circle-ellipse Problem이 있다.
 
 <br>
 
@@ -250,7 +252,7 @@ public class BankAccount {
 # Interface Segregation Principle, ISP
 
 - 인터페이스 분리 원칙
-- “Clients should not be foreced to depend upon interfaces that they do not use”
+- “Clients should not be foreced to depend upon interfaces that they do not use.”
 - 범용 인터페이스보다 특정 클라이언트를 위한 인터페이스 여러 개를 선언한다.
 - 시스템 내부 의존성을 약화시켜 리팩토링, 수정, 재배포를 쉽게 할 수 있도록 한다.
 
@@ -280,5 +282,5 @@ public class BankAccount {
 ---
 
 ### Reference
-https://ko.wikipedia.org/wiki/SOLID_(객체_지향_설계)
-https://www.nextree.co.kr/p6960/
+- https://ko.wikipedia.org/wiki/SOLID_(객체_지향_설계)
+- https://www.nextree.co.kr/p6960/
