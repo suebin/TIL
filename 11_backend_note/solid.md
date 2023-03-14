@@ -177,6 +177,10 @@ public class BankAccount {
 
 <br>
 
+해당 예제는 Move Method에 대한 이해를 위한 것으로 Singleton 패턴과 같은 다른 Refectoring 방안은 제외한 간단한 예제이다.
+
+<br>
+
 ---
 
 ### Reference
