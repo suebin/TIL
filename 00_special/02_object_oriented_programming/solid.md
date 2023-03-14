@@ -202,7 +202,7 @@ public class BankAccount {
 <br>
 <br>
 
-##### 💡 그래드 부치 (Grady Booch)가 말하는 추상화란 ?
+##### 💡 그래디 부치 (Grady Booch)가 말하는 추상화란 ?
 - 다른 모든 종류의 객체로부터 식별될 수 있는 객체의 본질적인 특징이다.
 
 
