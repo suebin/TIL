@@ -243,9 +243,41 @@ public class BankAccount {
 ##### 💡 공변성 (Covariance)과 반공변성 (Contravariance)
 - 공변성 : 한 변수가 변하면 다른 변수도 변하는 성질
 - 반공변성 : 그 반대의 성질
-
+- Super type이 Sub type으로 가는 것은 공변적이지만, Sub type이 Super type으로 가는 것은 반공변적이다.
 
 <br>
+
+##### LSP 예제
+
+```java
+public interface BankAccount {
+    /*
+     * Pre : 계좌의 잔고를 반환합니다.
+     * Post : 잔고는 0보다 커야 합니다.
+     */
+	int getBalance();
+}
+
+class NormalAccount implements BankAccount {
+	int balance;
+	@Override
+	public int getBalance() {
+		return this.getBalance();
+	}
+}
+
+class LimitedAccount implements BankAccount {
+	int balance;
+	@Override
+	public int getBalance() {
+		return this.getBalance();
+	}
+}
+
+```
+
+<br>
+
 
 ---
 
