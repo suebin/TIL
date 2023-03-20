@@ -13,9 +13,9 @@ public class ColorTokenizer {
         JavaSourceCode code = new JavaSourceCode(fileName);
 
         PaintSymbol paintSymbol = new PaintSymbol();
-        PaintKeyword paintKeyword = new PaintKeyword();
-
         paintSymbol.visit(code);
+
+        PaintKeyword paintKeyword = new PaintKeyword();
         paintKeyword.visit(code);
 
         try {
