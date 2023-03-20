@@ -35,7 +35,6 @@ public class BeverageVendingMachine {
      */
     public void start() throws Exception {
         StringBuilder notice = new StringBuilder();
-
         notice.append("\n==== 안녕하세요! 아래에서 원하는 음료를 선택하여 입력해주시길 바랍니다. (ex) 아메리카노) ====\n\n");
 
         for (String hotMenu : hotBeverages.keySet()) {
