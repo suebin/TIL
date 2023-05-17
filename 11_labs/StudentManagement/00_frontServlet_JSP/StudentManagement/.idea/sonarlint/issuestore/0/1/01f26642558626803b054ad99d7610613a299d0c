@@ -1,8 +1,0 @@
-
-[	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(ðÚ…»
-b
-java:S1192'"GDefine a constant instead of duplicating this literal "gender" 3 times.(Ë³ò©ûÿÿÿÿ
-o
-java:S1989$"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¼µý÷
-W
-java:S19890"AHandle the "RuntimeException" thrown here in a "try/catch" block.(ðÚ…»
