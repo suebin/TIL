@@ -31,16 +31,13 @@ public class Main {
 				System.out.println("Goldbach's conjecture is wrong.");
 			}
 		}
-
 	}
 
 	// 소수 구하기 : 소수이면 false
 	public static void getPrime() {
-
 		isPrime[0] = isPrime[1] = true;
 
 		for (int i = 2; i <= Math.sqrt(isPrime.length); i++) {
-
 			if (isPrime[i]) {
 				continue;
 			}
@@ -49,6 +46,5 @@ public class Main {
 				isPrime[j] = true;
 			}
 		}
-
 	}
 }
