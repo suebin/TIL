@@ -25,6 +25,7 @@ public class Main {
         }
 
         int result = 0;
+
         if (divisorList.size() >= k) {
             Collections.sort(divisorList);
             result = divisorList.get(k-1);
