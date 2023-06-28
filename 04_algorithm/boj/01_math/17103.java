@@ -18,7 +18,6 @@ public class Main {
 		getPrime();
 		
 		for (int i=0; i<T; i++) {
-			
 			int N = Integer.parseInt(br.readLine());
 			
 			int partition1 = N / 2;
@@ -46,7 +45,6 @@ public class Main {
 		prime[0] = prime[1] = true;
 		
 		for (int i = 2; i <= Math.sqrt(prime.length); i++) {
-
 			if (prime[i]) {
 				continue;
 			}
@@ -55,6 +53,5 @@ public class Main {
 				prime[j] = true;
 			}
 		}
-		
 	}
 }
