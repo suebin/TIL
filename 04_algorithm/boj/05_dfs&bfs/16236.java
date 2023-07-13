@@ -2,19 +2,21 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    static int n;
-    static int[][] map;
+    private static int n;
+    private static int[][] map;
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         n = Integer.parseInt(reader.readLine());
+
         map = new int[n][n];
-
         Shark shark = null;
-
         StringTokenizer st;
+
         for (int i = 0; i < n; i++) {
             st = new StringTokenizer(reader.readLine());
+
             for (int j = 0; j < n; j++) {
                 int status = Integer.parseInt(st.nextToken());
                 map[i][j] = status;
@@ -26,12 +28,10 @@ public class Main {
             }
         }
 
-        int answer = getTimeForSharkToEatFish(shark, map);
-        System.out.println(answer);
-        reader.close();
+        getTimeForSharkToEatFish(shark);
     }
 
-    static int getTimeForSharkToEatFish(Shark shark, int[][] map) {
+    private static void getTimeForSharkToEatFish(Shark shark) {
         int timeForSharkToEatFish = 0;
         int[] dx = {-1, 0, 0, 1};
         int[] dy = {0, -1, 1, 0};
@@ -82,15 +82,15 @@ public class Main {
             }
         }
 
-        return timeForSharkToEatFish;
+        System.out.println(timeForSharkToEatFish);
     }
 
-    static class Shark implements Comparable<Shark> {
-        int x;
-        int y;
-        int size;
-        int movementTime;
-        boolean hasEaten;
+    private static class Shark implements Comparable<Shark> {
+        private int x;
+        private int y;
+        private int size;
+        private int movementTime;
+        private boolean hasEaten;
 
         public Shark(int x, int y, int size, int movementTime) {
             this.x = x;
@@ -107,13 +107,11 @@ public class Main {
         }
 
         public boolean isEatable(int statusOfMap) {
-            if (this.size > statusOfMap && statusOfMap != 0) return true;
-            return false;
+            return this.size > statusOfMap && statusOfMap != 0;
         }
 
         public boolean isMovable(int statusOfMap) {
-            if (statusOfMap <= this.size) return true;
-            return false;
+            return statusOfMap <= this.size;
         }
     }
 }
