@@ -2,36 +2,69 @@ import java.util.*;
 
 class Solution {
     public int solution(String[] friends, String[] gifts) {
-        int answer = 0;
-        int len = friends.length;
+        answer = new int[4];
 
-        Map<String, Integer> map = new HashMap<>();
-        for (int i = 0; i < len; i++) {
-            map.put(friends[i], i);
+        nodes = new List[1000001];
+        boolean[] check = new boolean[1000001];
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < 1000001; i++) {
+            nodes[i] = new ArrayList<>();
         }
 
-        int[][] logs = new int[len][len];
-        int[] val = new int[len];
-
-        for (String gift : gifts) {
-            String[] name = gift.split(" ");
-            int a = map.get(name[0]);
-            int b = map.get(name[1]);
-            logs[a][b]++;
-            val[a]++;
-            val[b]--;
-        }
-
-        for (int i = 0; i < len; i++) {
-            int cnt = 0;
-            for (int j = 0; j < len; j++) {
-                if (i == j) continue;
-                if (logs[i][j] > logs[j][i]) cnt++;
-                else if (logs[i][j] == logs[j][i] && val[i] > val[j]) cnt++;
+        for (int[] edge : edges) {
+            nodes[edge[0]].add(edge[1]);
+            if (!check[edge[0]]) {
+                set.add(edge[0]);
+                check[edge[0]] = true;
             }
-            answer = Math.max(answer, cnt);
+            set.remove(edge[1]);
+        }
+
+        for (int node : set) {
+            if (nodes[node].size() >= 2) {
+                answer[0] = node;
+                break;
+            }
+        }
+
+        for (int node : nodes[answer[0]]) {
+            find(node);
         }
 
         return answer;
+    }
+
+    private static void find(int node) {
+        boolean[] check = new boolean[1000001];
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(node);
+        check[node] = true;
+
+        int nodeCnt = 0;
+        int edgeCnt = 0;
+
+        while (!queue.isEmpty()) {
+            node = queue.poll();
+            nodeCnt++;
+
+            List<Integer> nextNodes = nodes[node];
+
+            for (int nextNode : nextNodes) {
+                if (!check[nextNode]) {
+                    queue.offer(nextNode);
+                    check[nextNode] = true;
+                    edgeCnt++;
+                }
+            }
+        }
+
+        checkType(nodeCnt, edgeCnt);
+    }
+
+    private static void checkType(int nodeCnt, int edgeCnt) {
+        if (nodeCnt == edgeCnt) answer[1]++;
+        else if (nodeCnt > edgeCnt) answer[2]++;
+        else answer[3]++;
     }
 }
